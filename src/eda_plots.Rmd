@@ -167,7 +167,32 @@ for (i in 1:N) {
   print(g)
 }
 
+## to see how conductivity changes as pump power increases
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(feed_pump_pow, perm_cond_high_us)) +
+    geom_line() +
+    ggtitle('Conductivity by Pump Power') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Pump Power') + ylab('Conductivity') +
+    theme_minimal()
+  print(g)
+}
 
+
+# lol this one was a fail but i will keep thinking on it
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(mode, perm_flow_lm)) +
+    geom_point(size = 0.25) +
+    ggtitle('Water Flux') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Water Flux') +
+    theme_minimal()
+  print(g)
+}
 ```
 
 
