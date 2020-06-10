@@ -1,0 +1,173 @@
+---
+title: "eda_plots"
+author: "Hattie"
+date: "6/10/2020"
+output: pdf_document
+---
+
+```{r}
+## Load libraries.
+library(lubridate)
+library(viridis)
+library(ggplot2)
+library(tidyr)
+library(readr)
+library(dplyr)
+
+## Load data.
+load('../data/data.Rdata')
+
+## Number of experiments = 9.
+N <- 8
+OUTPUT <- FALSE
+```
+
+```{r}
+str(data)
+head(data)
+colnames(data)
+view(data)
+```
+
+```{r}
+data %>%
+  select(-time, -mode) %>%
+  group_by(experiment) %>%
+  summarise_all(mean) %>%
+  as.data.frame
+
+
+for (i in 1:N) {
+  df <- gather(data, key = measure, value = value,
+               c('perm_cond_high_us', 'perm_cond_low_us'))
+  g <- df %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, value, group = measure, color = measure)) +
+    geom_line() +
+    ggtitle('Permeate Conductivity') +
+    labs(subtitle = paste('Experiment', i), color = 'Measure') +
+    xlab('Time') + ylab('Permeate Conductivity') + ylim(0, 1000) +
+    scale_color_manual(values = c('SteelBlue', 'Orange3'),
+                       labels = c('High', 'Low')) +
+    theme_minimal()
+  print(g)
+}
+rm(df, g)
+
+## plots of feed pressure for each experiment.
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, feed_pressure_psi)) +
+    geom_line(size = 0.25) +
+    ggtitle('Feed Pressure') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Feed Pressure (psi)') + ylim(-5.61, 1114.9) +
+    theme_minimal()
+  print(g)
+}
+
+## plots of feed flowrate for each experiment.
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, feed_flow_lm)) +
+    geom_line(size = 0.25) +
+    ggtitle('Feed Flowrate') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Feed Flowrate') +
+    theme_minimal()
+  print(g)
+}
+
+## plots of water flux for each experiment.
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, water_flux_lmh)) +
+    geom_line(size = 0.25) +
+    ggtitle('Water Flux') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Water Flux (lmh)') +
+    theme_minimal()
+  print(g)
+}
+
+
+## water flux on time faceted by exp
+data %>% 
+  ggplot(aes(x = water_flux_lmh, y = time, color = factor(experiment))) + 
+  geom_line() +
+  facet_wrap(experiment~.)
+
+
+## feed pump power ts
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, feed_pump_pow)) +
+    geom_line(size = 0.25) +
+    ggtitle('Feed Pump Power') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Feed Pump Power') +
+    theme_minimal()
+  print(g)
+}
+
+## permeate conductivity ts
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, perm_cond_high_us)) +
+    geom_line(size = 0.25) +
+    ggtitle('Perm (High) Conductivity') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Permeate Conductivity') +
+    theme_minimal()
+  print(g)
+}
+
+## permeate flow rate ts
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, permeate_flowrate_l_min)) +
+    geom_line(size = 0.25) +
+    ggtitle('Permeate Flow Rate') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Permeate Flow Rate') +
+    theme_minimal()
+  print(g)
+}
+
+## feed flow rate ts
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, feed_flow_lm)) +
+    geom_line(size = 0.25) +
+    ggtitle('Feed Flow Rate') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Feed Flow Rate') +
+    theme_minimal()
+  print(g)
+}
+
+
+## feed pressure ts
+for (i in 1:N) {
+  g <- data %>%
+    filter(experiment == i) %>%
+    ggplot(aes(time, feed_pressure_psi)) +
+    geom_line(size = 0.25) +
+    ggtitle('Feed Flow Rate') +
+    labs(subtitle = paste('Experiment', i)) +
+    xlab('Time') + ylab('Feed Pressure') +
+    theme_minimal()
+  print(g)
+}
+
+
+```
+
+
