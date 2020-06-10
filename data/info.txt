@@ -1,0 +1,52 @@
+Experiment 10A:
+35 g/L NaCl
+500-900 psi
+7.5 wave/min
+data collected every second
+
+Experiment 10B: 
+35 g/L NaCl
+500-900 psi
+1.25 wave/min
+data collected every second
+
+Experiment 10C:
+35 g/L NaCl
+500-900 psi
+12 wave/min
+~24 hrs
+data collected every second
+
+Experiment 11A:
+Instant Ocean
+500-900 psi
+7.5 wave/min
+~24 hrs
+data collected every second
+
+Experiment 11B:
+Instant Ocean
+500-900 psi
+1.25 wave/min
+~24 hrs
+data collected every second
+
+Experiment 11C: 
+Instant Ocean
+500-900 psi
+12 wave/min
+~24 hrs
+data collected every second
+
+Experiment 12A: 
+1.5x Instant Ocean
+500-900 psi
+7.5 wave/min
+~10 days
+data collected every minute
+
+Experiment 13:
+Instant Ocean
+NREL wave
+~14 days
+data collected every minute
