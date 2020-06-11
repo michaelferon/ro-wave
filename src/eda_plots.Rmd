@@ -29,6 +29,65 @@ colnames(data)
 view(data)
 ```
 
+## TAKING OUT OUTLIERS 
+```{r}
+ex1 <- data %>% 
+  filter(experiment == 1) 
+trimmed_ex1 <- ex1[400:(nrow(ex1)-100), ]
+trimmed_ex1 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex2 <- data %>% 
+  filter(experiment == 2) 
+trimmed_ex2 <- ex2[500:(nrow(ex2)-90), ]
+trimmed_ex2 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex3 <- data %>% 
+  filter(experiment == 3) 
+trimmed_ex3 <- ex3[300:(nrow(ex3)-50), ]
+trimmed_ex3 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex4 <- data %>% 
+  filter(experiment == 4) 
+trimmed_ex4 <- ex4[500:(nrow(ex4)-60), ]
+trimmed_ex4 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex5 <- data %>% 
+  filter(experiment == 5) 
+trimmed_ex5 <- ex5[360:(nrow(ex5)-30), ]
+trimmed_ex5 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex6 <- data %>% 
+  filter(experiment == 6) 
+trimmed_ex6 <- ex6[400:(nrow(ex6)-290), ]
+trimmed_ex6 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex7 <- data %>% 
+  filter(experiment == 7) 
+trimmed_ex7 <- ex7[21:(nrow(ex7)), ]
+trimmed_ex7 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+
+ex8 <- data %>% 
+  filter(experiment == 8) 
+trimmed_ex8 <- ex8[36:(nrow(ex8)-22), ]
+trimmed_ex8 %>% 
+  ggplot(aes(time, feed_pressure_psi)) +
+  geom_line()
+```
+
 ```{r}
 data %>%
   select(-time, -mode) %>%
