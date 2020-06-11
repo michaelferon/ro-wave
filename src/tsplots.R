@@ -10,7 +10,7 @@ load('../data/data.Rdata')
 
 # Number of experiments
 N <- 8
-OUTPUT <- TRUE
+OUTPUT <- FALSE
 
 
 
@@ -137,38 +137,6 @@ data %>%
     ylab = 'Permeate Conductivity (uS)',
     DUAL = TRUE
   )
-
-
-## Plots of permeate conductivity.
-exp_out <- '../plots/ts/experiments/exp'
-for (i in 1:N) {
-  df <- gather(data, key = measure, value = value,
-               c('perm_cond_high_us', 'perm_cond_low_us'))
-  g <- df %>%
-    filter(experiment == i) %>%
-    ggplot(aes(time, value, group = measure, color = measure)) +
-    geom_line(size = 0.25) +
-    ggtitle('Permeate Conductivity') +
-    labs(subtitle = paste('Experiment', i), color = 'Measure') +
-    xlab('Time') + ylab('Permeate Conductivity (uS)') +
-    scale_color_manual(values = c('SteelBlue', 'Orange3'),
-                       labels = c('High', 'Low')) +
-    theme_minimal()
-  if (OUTPUT) {
-    pdf(file = paste('../plots/ts/permeate_conductivity/permeate_conductivity', i,
-                     '.pdf', sep = ''), height = 4.0, width = 9.5)
-    print(g + ylim(240, 1000))
-    dev.off()
-    
-    pdf(file = paste(exp_out, i, '/permeate_conductivity', i, '.pdf', sep=''),
-        height = 4.0, width = 9.5)
-    print(g)
-    dev.off()
-  }
-  
-  print(g)# + ylim(240, 1000))
-}
-rm(df)
 
 
 ## Permeate flowrate.
