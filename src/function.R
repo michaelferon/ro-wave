@@ -16,11 +16,11 @@ water_perm_coeff <- function(flux, feed_pressure, rej_cond){
   return(water_coeff)
 }
 
-View(data)
-
 data <- data %>%
           mutate(water_perm = water_perm_coeff(water_flux_lmh,
                                                feed_pressure_psi,
                                                rej_cond_ms))
+
+
 
 
