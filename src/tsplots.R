@@ -25,7 +25,7 @@ data <- data %>%
 
 # Number of experiments
 N <- 9
-OUTPUT <- TRUE
+OUTPUT <- FALSE
 
 exp_out <- "/Users/jonathanyun/Desktop/ro-wave/plots/ts/experiments/exp"
 
