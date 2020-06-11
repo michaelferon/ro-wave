@@ -131,7 +131,6 @@ data %>%
   gather(key = measure, value = permeate_conductivity,
          c('perm_cond_high_us', 'perm_cond_low_us')) %>%
   plot.ts(
-    data = .,
     var = 'permeate_conductivity',
     title = 'Permeate Conductivity',
     ylab = 'Permeate Conductivity (uS)',

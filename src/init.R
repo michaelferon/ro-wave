@@ -85,7 +85,27 @@ data <- data %>%
          rej_flow_lm, rej_valve_open, ac_current_a, mode, status)
 
 
+
+## Removing outliers.
+first <- c(400, 500, 300, 500, 360, 400, 21, 36)
+last <- c(100, 90, 50, 60, 30, 290, 0, 22)
+temp <- data %>%
+  filter(experiment == 1) %>%
+  slice(first[1]:(n() - last[1]))
+for (i in 2:8) {
+  temp <- data %>%
+    filter(experiment == i) %>%
+    slice(first[i]:(n() - last[i])) %>%
+    rbind(temp, .)
+}
+
+fullData <- data
+data <- temp
+rm(temp)
+
+
 ## Save data.
+save(fullData, file = '../data/fullData.Rdata')
 save(data, file = '../data/data.Rdata')
 
 
