@@ -13,6 +13,7 @@ library(ggplot2)
 library(tidyr)
 library(readr)
 library(dplyr)
+library(RColorBrewer)
 
 ## Load data.
 load('../data/data.Rdata')
@@ -252,6 +253,41 @@ for (i in 1:N) {
     theme_minimal()
   print(g)
 }
+
+## ts perm cond plot
+data %>%
+  filter(experiment == 5) %>%
+  ggplot(aes(time, perm_cond_high_us + perm_cond_low_us)) +
+  geom_line() +
+  scale_color_brewer(palette = "YlGnBu")
+  
+## experiment boxplots
+  data %>% 
+  ggplot(aes(experiment, water_perm_coef)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(title = "Water Permeability Coef Averages",
+       y = "Water Perm Coef",
+       x = "Experiment")
+
+  data %>% 
+  ggplot(aes(experiment, perm_cond_high_us)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(title = "Permeate Conductivity Averages",
+       y = "Water Conductivity",
+       x = "Experiment")
+
+  data %>% 
+  ggplot(aes(experiment, feed_pressure_psi)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(title = "Feed Pressure Averages",
+       y = "Feed Pressure PSI",
+       x = "Experiment")
+
+  
+
 ```
 
 
