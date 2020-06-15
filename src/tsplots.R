@@ -1,16 +1,18 @@
 rm(list = ls())
 
+## Load libraries.
 library(tidyverse)
 library(ggplot2)
 library(lubridate)
 library(viridis)
 
-#Loading the Data
+## Load data.
 load('../data/data.Rdata')
 
-# Number of experiments
+## Number of experiments = 8.
 N <- 8
 OUTPUT <- FALSE
+
 
 
 

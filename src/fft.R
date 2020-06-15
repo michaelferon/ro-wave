@@ -10,9 +10,12 @@ library(dplyr)
 ## Load data.
 load('../data/data.Rdata')
 
-## Number of experiments = 9.
+## Number of experiments = 8.
 N <- 8
-OUTPUT <- TRUE
+OUTPUT <- FALSE
+
+
+
 
 dfs <- list()
 for (i in 1:N) {

@@ -11,12 +11,14 @@ library(dplyr)
 ## Load data.
 load('../data/data.Rdata')
 
-## Number of experiments = 9.
+## Number of experiments = 8.
 N <- 8
 OUTPUT <- FALSE
 
 
-## Experiments summarries.
+
+
+## Experiments summaries.
 tapply(data$experiment, data$experiment, length)
 (data.mean <- data %>%
     select(-time, -mode, -status) %>%
