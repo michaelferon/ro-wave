@@ -16,6 +16,12 @@ OUTPUT <- FALSE
 
 
 
+exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
+exp.salt <- c('35 g/L NaCl', '35 g/L NaCl', '35 g/L NaCl', 'Instant Ocean',
+              'Instant Ocean', 'Instant Ocean', '1.5x Instant Ocean',
+              'Instant Ocean')
+exp.wave <- c('7.5 wave/min', '1.25 wave/min', '12 wave/min', '7.5 wave/min',
+              '1.25 wave/min', '12 wave/min', '7.5 wave/min', 'NREL wave')
 plot.ts <- function(data, var, title, ylab, ylim, DUAL = FALSE) {
   if (DUAL) {
     df <- data %>%
@@ -35,9 +41,9 @@ plot.ts <- function(data, var, title, ylab, ylim, DUAL = FALSE) {
     }
     
     g <- g +
-      geom_line(size = 0.025) +
-      ggtitle(title) +
-      labs(subtitle = paste('Experiment', i)) +
+      geom_line(size = 0.01) +
+      ggtitle(paste('Experiment', exp.names[i])) +
+      labs(subtitle = paste(exp.salt[i], ', ', exp.wave[i], sep='')) +
       xlab('Time') + ylab(ylab) +
       theme_minimal()
     
@@ -59,6 +65,8 @@ plot.ts <- function(data, var, title, ylab, ylim, DUAL = FALSE) {
       print(g)
       dev.off()
     }
+    
+    # print(g)
   }
 }
 
@@ -68,8 +76,7 @@ plot.ts(
   data = data,
   var = 'water_perm_coef',
   title = 'Water Permeability',
-  ylab = expression(
-    paste('Water Permeability (L m'^2, ' hour'^-1, ' psi'^-1, ')'))
+  ylab = 'Water Permeability (lmh/psi)'
 )
 
 
