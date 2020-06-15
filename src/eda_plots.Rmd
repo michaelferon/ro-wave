@@ -262,29 +262,55 @@ data %>%
   scale_color_brewer(palette = "YlGnBu")
   
 ## experiment boxplots
+
   data %>% 
   ggplot(aes(experiment, water_perm_coef)) +
   geom_boxplot() +
   theme_minimal() +
-  labs(title = "Water Permeability Coef Averages",
+  labs(title = "Water Permeability Coefficients",
        y = "Water Perm Coef",
-       x = "Experiment")
+       x = "Experiment") +
+  scale_x_discrete(labels = c("1" = "10A",
+                              "2" = "10B", 
+                              "3" = "10C", 
+                              "4" = "11A",
+                              "5" = "11B",
+                              "6" = "11C",
+                              "7" = "12A",
+                              "8" = "13"))
+    
 
   data %>% 
   ggplot(aes(experiment, perm_cond_high_us)) +
   geom_boxplot() +
   theme_minimal() +
-  labs(title = "Permeate Conductivity Averages",
+  labs(title = "Permeate Conductivity",
        y = "Water Conductivity",
-       x = "Experiment")
+       x = "Experiment") +
+  scale_x_discrete(labels = c("1" = "10A",
+                              "2" = "10B", 
+                              "3" = "10C", 
+                              "4" = "11A",
+                              "5" = "11B",
+                              "6" = "11C",
+                              "7" = "12A",
+                              "8" = "13"))
 
   data %>% 
   ggplot(aes(experiment, feed_pressure_psi)) +
   geom_boxplot() +
   theme_minimal() +
-  labs(title = "Feed Pressure Averages",
+  labs(title = "Feed Pressure",
        y = "Feed Pressure PSI",
-       x = "Experiment")
+       x = "Experiment") +
+  scale_x_discrete(labels = c("1" = "10A",
+                              "2" = "10B", 
+                              "3" = "10C", 
+                              "4" = "11A",
+                              "5" = "11B",
+                              "6" = "11C",
+                              "7" = "12A",
+                              "8" = "13"))
 
   
 
