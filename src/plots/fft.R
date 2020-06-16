@@ -17,7 +17,6 @@ OUTPUT <- FALSE
 
 
 
-
 exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
 exp.salt <- c('35 g/L NaCl', '35 g/L NaCl', '35 g/L NaCl', 'Instant Ocean',
               'Instant Ocean', 'Instant Ocean', '1.5x Instant Ocean',
