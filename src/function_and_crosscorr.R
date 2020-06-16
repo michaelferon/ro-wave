@@ -56,14 +56,15 @@ for (i in 1:N){
   
   data_ccf <- ccf(perm, press)
   
-  corr_plot <- plot(data_ccf, main = 'Cross Correlation in Permeate Conductivity and Feed Pressure')
   
   if(OUTPUT){
-    pdf(file = paste('...plots/cross_correlation/permeatecond_pressure', i, '.pdf', sep = ''),
-        height = 3.5, width = 10.0)
+    png(file = paste('../plots/cross_correlation/permeatecond_pressure', i, '.png', sep = ''),
+        height = 400, width = 1083.75)
   }
-  print(corr_plot)
   
+  # plot(data_ccf, main = paste("Cross Correlation in Permeate Conductivity and Feed Pressure in Experiment", exp[i]))
+  plot(data_ccf, main = paste('Experiment ', exp[i], '\nCross Correlation in Permeate Conductivity and Feed Pressure'))
+
   if(OUTPUT){
     dev.off()
   }
