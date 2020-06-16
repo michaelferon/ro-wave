@@ -58,11 +58,10 @@ for (i in 1:N){
   
   
   if(OUTPUT){
-    png(file = paste('../plots/cross_correlation/permeatecond_pressure', i, '.png', sep = ''),
+    png(file = paste('../plots/cross_correlation/permeate_pressure/permeatecond_pressure', i, '.png', sep = ''),
         height = 400, width = 1083.75)
   }
   
-  # plot(data_ccf, main = paste("Cross Correlation in Permeate Conductivity and Feed Pressure in Experiment", exp[i]))
   plot(data_ccf, main = paste('Experiment ', exp[i], '\nCross Correlation in Permeate Conductivity and Feed Pressure'))
 
   if(OUTPUT){
@@ -71,4 +70,49 @@ for (i in 1:N){
 }
  
 
+for (i in 1:N){
+  temp <- data %>% 
+      filter(experiment == i)
+  
+  perm <- temp %>%
+    select(perm_cond_low_us)
+  
+  water_coeff <- temp %>%
+    select(water_perm_coef)
+  
+  data_ccf <- ccf(perm, water_coeff)
+  
+  if(OUTPUT){
+    png(file = paste('../plots/cross_correlation/permeate_water_coeff/permeatecon_watercoeff', i, '.png', sep = ''),
+        height = 400, width = 1083.75)
+  }
+  plot(data_ccf, main = paste('Experiment ', exp[i], '\nCross Correlation in Permeate Conductivity and Water Coefficient'))
+  
+  if(OUTPUT){
+    dev.off()
+  }
+}
 
+
+for (i in 1:N){
+  temp <- data %>% 
+    filter(experiment == i)
+  
+  press <- temp %>%
+    select(feed_pressure_psi)
+  
+  water_coeff <- temp %>%
+    select(water_perm_coef)
+  
+  data_ccf <- ccf(press, water_coeff)
+  
+  if(OUTPUT){
+    png(file = paste('../plots/cross_correlation/pressure_water_coeff/pressure_watercoeff', i, '.png', sep = ''),
+        height = 400, width = 1083.75)
+  }
+  plot(data_ccf, main = paste('Experiment ', exp[i], '\nCross Correlation in Feed Pressure and Water Coefficient'))
+  
+  if(OUTPUT){
+    dev.off()
+  }
+}
