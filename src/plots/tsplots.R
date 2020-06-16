@@ -11,7 +11,7 @@ load('../data/data.Rdata')
 
 ## Number of experiments = 8.
 N <- 8
-OUTPUT <- FALSE
+OUTPUT <- TRUE
 
 
 
@@ -22,7 +22,7 @@ exp.salt <- c('35 g/L NaCl', '35 g/L NaCl', '35 g/L NaCl', 'Instant Ocean',
               'Instant Ocean')
 exp.wave <- c('7.5 wave/min', '1.25 wave/min', '12 wave/min', '7.5 wave/min',
               '1.25 wave/min', '12 wave/min', '7.5 wave/min', 'NREL wave')
-plot.ts <- function(data, var, title, ylab, ylim, DUAL = FALSE) {
+plot.ts <- function(data, var, title, ylab, ylim) {
   df <- data %>%
     select(time, experiment, value = var)
 
@@ -31,8 +31,6 @@ plot.ts <- function(data, var, title, ylab, ylim, DUAL = FALSE) {
       filter(experiment == i) %>%
       ggplot(aes(time, value)) +
       geom_line(size = 0.1) +
-      ggtitle(paste('Experiment', exp.names[i])) +
-      labs(subtitle = paste(exp.salt[i], ', ', exp.wave[i], sep='')) +
       xlab('Time') + ylab(ylab) + ylim(ylim) +
       theme_minimal(base_size = 35)
     
@@ -41,14 +39,19 @@ plot.ts <- function(data, var, title, ylab, ylim, DUAL = FALSE) {
       #     height = 4.0, width = 8.67)
       png(file = paste('../plots/ts/', var, '/', var, i, '.png', sep=''),
           height = 800, width = 2167.5)
-      print(g)
+      print(
+        g + ggtitle(paste('Experiment', exp.names[i])) +
+          labs(subtitle = paste(exp.salt[i], ', ', exp.wave[i], sep=''))
+      )
       dev.off()
       
       # pdf(file = paste('../plots/ts/experiments/exp', i, '/', var, '.pdf', sep=''),
       #     height = 4.0, width = 8.67)
       png(file = paste('../plots/ts/experiments/exp', i, '/', var, '.png', sep=''),
           height = 800, width = 2167.5)
-      print(g)
+      print(
+        g + ggtitle(title)
+      )
       dev.off()
     }
   }
