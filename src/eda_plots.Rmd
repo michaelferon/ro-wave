@@ -261,27 +261,151 @@ data %>%
   geom_line() +
   scale_color_brewer(palette = "YlGnBu")
   
-## experiment boxplots
 
+
+
+## feed pressure confidence intervals
+feed_pressure_averages <- tapply(data$feed_pressure_psi, data$experiment, mean)
+feed_pressure_sd <- tapply(data$feed_pressure_psi, data$experiment, sd)
+feed_pressure_ss <- tapply(data$feed_pressure_psi, data$experiment, function(x) length(x))
+feed_pressure_error <- qt(.975, df = feed_pressure_ss - 1) * feed_pressure_sd / sqrt(feed_pressure_ss)
+feed_pressure_left <- feed_pressure_averages - feed_pressure_error
+feed_pressure_right <- feed_pressure_averages + feed_pressure_error
+
+## permeate conductivity (low) confidence intervals
+perm_cond_averages <- tapply(data$perm_cond_low_us, data$experiment, mean)
+perm_cond_sd <- tapply(data$perm_cond_low_us, data$experiment, sd)
+perm_cond_ss <- tapply(data$perm_cond_low_us, data$experiment, function(x) length(x))
+perm_cond_error <- qt(.975, df = perm_cond_ss - 1) * perm_cond_sd / sqrt(perm_cond_ss)
+perm_cond_left <- perm_cond_averages - perm_cond_error
+perm_cond_right <- perm_cond_averages + perm_cond_error
+
+## water permeability coef confidence intervals
+wp_averages <- tapply(data$water_perm_coef, data$experiment, mean)
+wp_sd <- tapply(data$water_perm_coef, data$experiment, sd)
+wp_ss <- tapply(data$water_perm_coef, data$experiment, function(x) length(x))
+wp_error <- qt(.975, df = wp_ss - 1) * wp_sd / sqrt(wp_ss)
+wp_left <- wp_averages - wp_error
+wp_right <- wp_averages + wp_error
+
+
+## experiment boxplots
   data %>% 
   ggplot(aes(experiment, water_perm_coef)) +
-  geom_boxplot() +
-  theme_minimal() +
-  labs(title = "Water Permeability Coefficients",
+    geom_boxplot() +
+    theme_minimal() +
+    labs(title = "Water Permeability Coefficients",
        y = "Water Perm Coef",
        x = "Experiment") +
-  scale_x_discrete(labels = c("1" = "10A",
-                              "2" = "10B", 
-                              "3" = "10C", 
-                              "4" = "11A",
-                              "5" = "11B",
-                              "6" = "11C",
-                              "7" = "12A",
-                              "8" = "13"))
+    scale_x_discrete(labels = c("1" = "10A",
+                                "2" = "10B", 
+                                "3" = "10C", 
+                                "4" = "11A",
+                                "5" = "11B",
+                                "6" = "11C",
+                                "7" = "12A",
+                                "8" = "13")) +
+    geom_segment(aes(x = .5, 
+                     y = wp_left[1], 
+                     xend = 1.5, 
+                     yend = wp_left[1], 
+                     color = "10A",
+                     alpha = .5)) +
+    geom_segment(aes(x = .5, 
+                     y = wp_right[1], 
+                     xend = 1.5, 
+                     yend = wp_right[1], 
+                     color = "10A",
+                     alpha = .5)) +
+    geom_segment(aes(x = 1.5, 
+                     y = wp_left[2], 
+                     xend = 2.5, 
+                     yend = wp_left[2], 
+                     color = "10B",
+                     alpha = .5)) +
+    geom_segment(aes(x = 1.5, 
+                     y = wp_right[2], 
+                     xend = 2.5, 
+                     yend = wp_right[2], 
+                     color = "10B",
+                     alpha = .5)) +
+    geom_segment(aes(x = 2.5, 
+                     y = wp_left[3], 
+                     xend = 3.5, 
+                     yend = wp_left[3], 
+                     color = "10C",
+                     alpha = .5)) +
+    geom_segment(aes(x = 2.5, 
+                     y = wp_right[3], 
+                     xend = 3.5, 
+                     yend = wp_right[3], 
+                     color = "10C",
+                     alpha = .5)) +
+    geom_segment(aes(x = 3.5, 
+                     y = wp_left[4], 
+                     xend = 4.5, 
+                     yend = wp_left[4], 
+                     color = "11A",
+                     alpha = .5)) +
+    geom_segment(aes(x = 3.5, 
+                     y = wp_right[4], 
+                     xend = 4.5, 
+                     yend = wp_right[4], 
+                     color = "11A",
+                     alpha = .5)) +
+    geom_segment(aes(x = 4.5, 
+                     y = wp_left[5], 
+                     xend = 5.5, 
+                     yend = wp_left[5], 
+                     color = "11B",
+                     alpha = .5)) +
+    geom_segment(aes(x = 4.5, 
+                     y = wp_right[5], 
+                     xend = 5.5, 
+                     yend = wp_right[5], 
+                     color = "11B",
+                     alpha = .5)) +
+    geom_segment(aes(x = 5.5, 
+                     y = wp_left[6], 
+                     xend = 6.5, 
+                     yend = wp_left[6], 
+                     color = "11C",
+                     alpha = .5)) +
+    geom_segment(aes(x = 5.5, 
+                     y = wp_right[6], 
+                     xend = 6.5, 
+                     yend = wp_right[6], 
+                     color = "11C",
+                     alpha = .5)) +
+    geom_segment(aes(x = 6.5, 
+                     y = wp_left[7], 
+                     xend = 7.5, 
+                     yend = wp_left[7], 
+                     color = "12A",
+                     alpha = .5)) +
+    geom_segment(aes(x = 6.5, 
+                     y = wp_right[7], 
+                     xend = 7.5, 
+                     yend = wp_right[7], 
+                     color = "12A",
+                     alpha = .5)) +
+    geom_segment(aes(x = 7.5, 
+                     y = wp_left[8], 
+                     xend = 8.5, 
+                     yend = wp_left[8], 
+                     color = "13",
+                     alpha = .5)) +
+    geom_segment(aes(x = 7.5, 
+                     y = wp_right[8], 
+                     xend = 8.5, 
+                     yend = wp_right[8], 
+                     color = "13",
+                     alpha = .5))
+    
     
 
   data %>% 
-  ggplot(aes(experiment, perm_cond_high_us)) +
+  ggplot(aes(experiment, perm_cond_low_us)) +
   geom_boxplot() +
   theme_minimal() +
   labs(title = "Permeate Conductivity",
@@ -312,7 +436,6 @@ data %>%
                               "7" = "12A",
                               "8" = "13"))
 
-  
 
 ```
 
