@@ -54,7 +54,7 @@ for (i in 1:N){
   press <- temp %>%
           select(feed_pressure_psi)
   
-  data_ccf <- ccf(perm, press)
+  data_ccf <- ccf(press, perm)
   
   
   if(OUTPUT){
