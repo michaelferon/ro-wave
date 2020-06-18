@@ -18,7 +18,7 @@ library(RColorBrewer)
 ## Load data.
 load('../data/data.Rdata')
 
-## Number of experiments = 9.
+## Number of experiments = 8.
 N <- 8
 OUTPUT <- FALSE
 ```
@@ -435,8 +435,143 @@ wp_right <- wp_averages + wp_error
                               "6" = "11C",
                               "7" = "12A",
                               "8" = "13"))
+  
+  
+ns <- cumsum(tapply(data$experiment, data$experiment, length)[-8])
+keep <- c(
+  4908:84132,
+  4238:81182 + ns[1],
+  5323:80322 + ns[2],
+  5585:84648 + ns[3],
+  2991:75638 + ns[4],
+  5558:90965 + ns[5],
+  235:36045 + ns[6],
+  624:79433 + ns[7]
+)
 
+data <- data %>%
+  slice(keep)
+  
+exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
+exp.salt <- c('35 g/L NaCl', '35 g/L NaCl', '35 g/L NaCl', 'Instant Ocean',
+              'Instant Ocean', 'Instant Ocean', '1.5x Instant Ocean',
+              'Instant Ocean')
+exp.wave <- c('7.5 wave/min', '1.25 wave/min', '12 wave/min', '7.5 wave/min',
+              '1.25 wave/min', '12 wave/min', '7.5 wave/min', 'NREL wave')
+  ## Scatterplot matrices.
+for (i in 1:N) {
+  if (OUTPUT) {
+    
+    set.seed(1)
+    data %>%
+      filter(experiment == i) %>%
+      slice(sample(1:nrow(.), 10000, replace = FALSE)) %>%
+      select(water_flux_lmh, feed_pressure_psi, feed_pump_pow, feed_flow_lm,
+             perm_flow_lm, rej_flow_lm, ac_current_a) %>%
+      rename(
+        flux = water_flux_lmh,
+        feed_psi = feed_pressure_psi,
+        feed_pow = feed_pump_pow,
+        feed_flow = feed_flow_lm,
+        perm_flow = perm_flow_lm,
+        rej_flow = rej_flow_lm,
+        ac_curr = ac_current_a
+      ) %>%
+      pairs(cex = 0.01, main = paste('Experiment', exp.names[i]))
+    
+    set.seed(1)
+    data %>%
+      filter(experiment == i) %>%
+      slice(sample(1:nrow(.), 10000, replace = FALSE)) %>%
+      select(water_perm_coef, feed_pressure_psi, feed_volume_l, feed_temp_c,
+             perm_cond_low_us, rej_cond_ms) %>%
+      rename(
+        perm_coef = water_perm_coef,
+        feed_psi = feed_pressure_psi,
+        feed_vol = feed_volume_l,
+        feed_temp = feed_temp_c,
+        perm_cond = perm_cond_low_us,
+        rej_cond = rej_cond_ms
+      ) %>%
+      pairs(cex = 0.01, main = paste('Experiment', exp.names[i])) 
+  }
+}
 
 ```
+
+```{r}
+## LASSO  !!!! yeehaw
+test <- data %>% 
+  filter(experiment == 1) %>% 
+  select(-mode, -status, - ac_current_a, -rej_valve_open, -rej_flow_lm, -time, -experiment)
+
+library(xts)
+library(viridis)
+library(glmnet)
+
+predict.col <- which(colnames((test)) == "perm_cond_low_us")
+yy <- as.matrix(test[,predict.col])
+xx <- as.matrix(test[,-predict.col])
+
+mod.ridge <- cv.glmnet(xx, yy, alpha=0)
+coef(mod.ridge, s = mod.ridge$lambda.min)[ , 1]
+
+weights <- 1/abs(matrix(coef(mod.ridge, s=mod.ridge$lambda.min)[, 1][-1]))^1
+
+mod.adaptive <- cv.glmnet(xx, yy,  alpha = 1, penalty.factor = weights)
+
+rain <- plasma(ncol(xx))
+plot(mod.adaptive$glmnet.fit, xvar="lambda", label=TRUE, col=rain, cex.lab=1.5)
+abline(v = log(mod.adaptive$lambda.min), col = "black")
+abline(v = log(mod.adaptive$lambda.1se), col = "blue")
+abline(v = log(6*mod.adaptive$lambda.1se),col= "red")
+abline(v = 0,col="green")
+
+s.list <- c(as.numeric(mod.adaptive$lambda.min), as.numeric(mod.adaptive$lambda.1se), as.numeric(6*mod.adaptive$lambda.1se), 1)
+
+for(s in s.list) {
+    coef <- coef(mod.adaptive, s=s)
+    
+    #Identify selected variables
+    selected_attributes <- (coef@i[-1]) 
+    colnames(xx)[selected_attributes]
+    
+    #Compute R-squared
+    predictions <- predict(mod.adaptive, newx=xx, s=s)
+    SSE=mean((yy-predictions)^2); print(SSE)
+    SST=mean((yy-mean(yy))^2); print(SST)
+    Rsqu=1-SSE/SST; print(Rsqu)
+    
+    #Plot prediction
+    data1 <- yy
+    data2 <- predictions
+    max.val <- max(c(data1, data2))
+    min.val <- min(c(data1, data2))
+    data2plot <- cbind(data1, data2)
+    
+    plot(x = data2plot[,1], y = data2plot[,2]
+         , xlim=c(min.val,max.val), ylim=c(min.val,max.val)
+         , xlab="Actual", ylab="Predicted"
+         , pch=20
+         , main = paste("Lambda = ",round(s,3),", Variables = ", length(selected_attributes), collapse="")
+         )
+    abline(a=0,b=1,col="blue", lwd=2)
+    
+    legend("bottomright", 
+           inset = c(-.01,-.01),
+           legend = c("Observation", "Perfect Fit"
+                      , paste0("R-sq = ",round(Rsqu,2))),
+           col = c("black", "blue", NA),
+           pch = c(20,NA, NA),
+           lwd = c(NA,2, NA),
+           bty = "n",
+           cex=2)
+}
+
+par(mfrow=c(1,1))
+plot(index(test), as.numeric(test$perm_cond_low_us), type="l", xlab="", ylab="")
+lines(index(test),  predict(mod.adaptive, newx = xx, s=mod.adaptive$lambda.1se), col=2)
+```
+
 
 
