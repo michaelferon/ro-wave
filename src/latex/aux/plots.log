@@ -1,0 +1,2280 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 JUN 2020 13:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./plots.tex
+(./plots.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@caption@flags=\count91
+\c@ContinuedFloat=\count92
+)
+\c@subfigure=\count93
+\c@subtable=\count94
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks18
+\float@box=\box27
+\@float@everytoks=\toks19
+\@floatcapt=\box28
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+No file plots.aux.
+\openout1 = `plots.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(3.61371pt, 607.06758pt, 3.61371pt)
+* v-part:(T,H,B)=(36.135pt, 755.22128pt, 3.61371pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=607.06758pt
+* \textheight=755.22128pt
+* \oddsidemargin=-68.65628pt
+* \evensidemargin=-68.65628pt
+* \topmargin=-73.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen120
+\scratchbox=\box29
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen121
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef1
+.png, id=1, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef1.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef1.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef1.png  used on input line 17.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 18.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef2
+.png, id=3, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef2.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef2.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef2.png  used on input line 20.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef3
+.png, id=4, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef3.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef3.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef3.png  used on input line 23.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef4
+.png, id=5, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef4.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef4.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef4.png  used on input line 26.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef5
+.png, id=6, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef5.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef5.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef5.png  used on input line 29.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef6
+.png, id=7, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef6.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef6.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef6.png  used on input line 32.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef7
+.png, id=8, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef7.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef7.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef7.png  used on input line 35.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef8
+.png, id=9, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_
+coef8.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef8.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_pe
+rm_coef/water_perm_coef8.png  used on input line 38.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/
+michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef1.png> </
+Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_coef2.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_perm_c
+oef3.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/water_
+perm_coef4.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_perm_coef/
+water_perm_coef5.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_perm
+_coef/water_perm_coef6.png> </Users/michaelferon/Projects/rowave2/plots/ts/wate
+r_perm_coef/water_perm_coef7.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/water_perm_coef/water_perm_coef8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh1.p
+ng, id=25, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh1.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h1.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh1.png  used on input line 48.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh2.p
+ng, id=26, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh2.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h2.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh2.png  used on input line 51.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh3.p
+ng, id=27, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh3.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h3.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh3.png  used on input line 54.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh4.p
+ng, id=28, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh4.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h4.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh4.png  used on input line 57.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh5.p
+ng, id=29, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh5.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h5.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh5.png  used on input line 60.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh6.p
+ng, id=30, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh6.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h6.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh6.png  used on input line 63.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh7.p
+ng, id=31, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh7.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h7.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh7.png  used on input line 66.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lmh8.p
+ng, id=32, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_l
+mh8.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h8.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh8.png  used on input line 69.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [2 </Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flux_lm
+h1.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water_flu
+x_lmh2.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/water
+_flux_lmh3.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_flux_lmh/w
+ater_flux_lmh4.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_flux_l
+mh/water_flux_lmh5.png> </Users/michaelferon/Projects/rowave2/plots/ts/water_fl
+ux_lmh/water_flux_lmh6.png> </Users/michaelferon/Projects/rowave2/plots/ts/wate
+r_flux_lmh/water_flux_lmh7.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+water_flux_lmh/water_flux_lmh8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi1.png, id=44, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi1.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi1.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi1.png  used on input line 79.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi2.png, id=45, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi2.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi2.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi2.png  used on input line 82.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi3.png, id=46, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi3.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi3.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi3.png  used on input line 85.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi4.png, id=47, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi4.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi4.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi4.png  used on input line 88.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi5.png, id=48, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi5.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi5.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi5.png  used on input line 91.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi6.png, id=49, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi6.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi6.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi6.png  used on input line 94.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi7.png, id=50, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi7.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi7.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi7.png  used on input line 97.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_
+psi8.png, id=51, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pres
+sure_psi8.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_press
+ure_psi8.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pre
+ssure_psi/feed_pressure_psi8.png  used on input line 100.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+
+[3 </Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressu
+re_psi1.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/f
+eed_pressure_psi2.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pres
+sure_psi/feed_pressure_psi3.png> </Users/michaelferon/Projects/rowave2/plots/ts
+/feed_pressure_psi/feed_pressure_psi4.png> </Users/michaelferon/Projects/rowave
+2/plots/ts/feed_pressure_psi/feed_pressure_psi5.png> </Users/michaelferon/Proje
+cts/rowave2/plots/ts/feed_pressure_psi/feed_pressure_psi6.png> </Users/michaelf
+eron/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_psi7.png> </User
+s/michaelferon/Projects/rowave2/plots/ts/feed_pressure_psi/feed_pressure_psi8.p
+ng>]
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow1.png
+, id=63, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+1.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow1
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow1.png  used on input line 110.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow2.png
+, id=64, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+2.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow2
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow2.png  used on input line 113.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow3.png
+, id=65, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+3.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow3
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow3.png  used on input line 116.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow4.png
+, id=66, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+4.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow4
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow4.png  used on input line 119.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow5.png
+, id=67, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+5.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow5
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow5.png  used on input line 122.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow6.png
+, id=68, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+6.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow6
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow6.png  used on input line 125.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow7.png
+, id=69, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+7.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow7
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow7.png  used on input line 128.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow8.png
+, id=70, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow
+8.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow8
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_pum
+p_pow/feed_pump_pow8.png  used on input line 131.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [4 </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_pow1
+.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_po
+w2.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pump_
+pow3.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_pum
+p_pow4.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed_p
+ump_pow5.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/feed
+_pump_pow6.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/fe
+ed_pump_pow7.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_pump_pow/
+feed_pump_pow8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l1.png
+, id=82, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+1.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l1
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l1.png  used on input line 141.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l2.png
+, id=83, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+2.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l2
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l2.png  used on input line 144.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l3.png
+, id=84, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+3.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l3
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l3.png  used on input line 147.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l4.png
+, id=85, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+4.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l4
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l4.png  used on input line 150.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l5.png
+, id=86, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+5.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l5
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l5.png  used on input line 153.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l6.png
+, id=87, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+6.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l6
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l6.png  used on input line 156.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l7.png
+, id=88, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+7.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l7
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l7.png  used on input line 159.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l8.png
+, id=89, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l
+8.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l8
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_vol
+ume_l/feed_volume_l8.png  used on input line 162.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [5 </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_l1
+.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volume_
+l2.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_volum
+e_l3.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_vol
+ume_l4.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed_v
+olume_l5.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/feed
+_volume_l6.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/fe
+ed_volume_l7.png> </Users/michaelferon/Projects/rowave2/plots/ts/feed_volume_l/
+feed_volume_l8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c1.png, id
+=101, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c1.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c1.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c1.png  used on input line 172.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c2.png, id
+=102, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c2.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c2.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c2.png  used on input line 175.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c3.png, id
+=103, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c3.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c3.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c3.png  used on input line 178.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c4.png, id
+=104, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c4.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c4.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c4.png  used on input line 181.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c5.png, id
+=105, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c5.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c5.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c5.png  used on input line 184.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c6.png, id
+=106, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c6.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c6.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c6.png  used on input line 187.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c7.png, id
+=107, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c7.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c7.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c7.png  used on input line 190.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c8.png, id
+=108, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c8.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c8.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_tem
+p_c/feed_temp_c8.png  used on input line 193.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [6 </Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c1.png
+> </Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c2.png> 
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c3.png> </
+Users/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c4.png> </Us
+ers/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c5.png> </User
+s/michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c6.png> </Users/
+michaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c7.png> </Users/mi
+chaelferon/Projects/rowave2/plots/ts/feed_temp_c/feed_temp_c8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm1.png, 
+id=120, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm1.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm1.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm1.png  used on input line 203.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm2.png, 
+id=121, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm2.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm2.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm2.png  used on input line 206.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm3.png, 
+id=122, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm3.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm3.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm3.png  used on input line 209.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm4.png, 
+id=123, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm4.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm4.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm4.png  used on input line 212.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm5.png, 
+id=124, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm5.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm5.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm5.png  used on input line 215.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm6.png, 
+id=125, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm6.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm6.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm6.png  used on input line 218.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm7.png, 
+id=126, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm7.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm7.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm7.png  used on input line 221.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm8.png, 
+id=127, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm8.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm8.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/feed_flo
+w_lm/feed_flow_lm8.png  used on input line 224.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [7 </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm1.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm2.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm3.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm4.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm5.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm6.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm7.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/feed_flow_lm/feed_flow_lm8.p
+ng>]
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s1.png, id=140, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us1.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us1.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us1.png  used on input line 234.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s2.png, id=141, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us2.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us2.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us2.png  used on input line 237.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s3.png, id=142, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us3.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us3.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us3.png  used on input line 240.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s4.png, id=143, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us4.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us4.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us4.png  used on input line 243.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s5.png, id=144, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us5.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us5.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us5.png  used on input line 246.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s6.png, id=145, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us6.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us6.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us6.png  used on input line 249.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s7.png, id=146, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us7.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us7.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us7.png  used on input line 252.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_u
+s8.png, id=147, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_
+low_us8.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us8.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_con
+d_low_us/perm_cond_low_us8.png  used on input line 255.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [8 </Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_l
+ow_us1.png> </Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_low_us/per
+m_cond_low_us2.png> </Users/michaelferon/Projects/rowave2/plots/ts/perm_cond_lo
+w_us/perm_cond_low_us3.png> </Users/michaelferon/Projects/rowave2/plots/ts/perm
+_cond_low_us/perm_cond_low_us4.png> </Users/michaelferon/Projects/rowave2/plots
+/ts/perm_cond_low_us/perm_cond_low_us5.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/perm_cond_low_us/perm_cond_low_us6.png> </Users/michaelferon/Projec
+ts/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_us7.png> </Users/michaelfero
+n/Projects/rowave2/plots/ts/perm_cond_low_us/perm_cond_low_us8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm1.png, 
+id=159, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm1.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm1.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm1.png  used on input line 265.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm2.png, 
+id=160, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm2.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm2.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm2.png  used on input line 268.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm3.png, 
+id=161, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm3.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm3.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm3.png  used on input line 271.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm4.png, 
+id=162, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm4.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm4.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm4.png  used on input line 274.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm5.png, 
+id=163, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm5.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm5.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm5.png  used on input line 277.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm6.png, 
+id=164, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm6.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm6.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm6.png  used on input line 280.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm7.png, 
+id=165, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm7.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm7.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm7.png  used on input line 283.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm8.png, 
+id=166, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm8.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm8.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/perm_flo
+w_lm/perm_flow_lm8.png  used on input line 286.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [9 </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm1.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm2.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm3.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm4.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm5.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm6.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm7.p
+ng> </Users/michaelferon/Projects/rowave2/plots/ts/perm_flow_lm/perm_flow_lm8.p
+ng>]
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms1.png, id
+=178, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms1.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms1.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms1.png  used on input line 296.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms2.png, id
+=179, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms2.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms2.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms2.png  used on input line 299.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms3.png, id
+=180, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms3.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms3.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms3.png  used on input line 302.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms4.png, id
+=181, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms4.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms4.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms4.png  used on input line 305.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms5.png, id
+=182, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms5.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms5.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms5.png  used on input line 308.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms6.png, id
+=183, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms6.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms6.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms6.png  used on input line 311.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms7.png, id
+=184, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms7.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms7.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms7.png  used on input line 314.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms8.png, id
+=185, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms8.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms8.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_cond
+_ms/rej_cond_ms8.png  used on input line 317.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [10 </Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms1.pn
+g> </Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms2.png>
+ </Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms3.png> <
+/Users/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms4.png> </U
+sers/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms5.png> </Use
+rs/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms6.png> </Users
+/michaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms7.png> </Users/m
+ichaelferon/Projects/rowave2/plots/ts/rej_cond_ms/rej_cond_ms8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm1.png, id
+=197, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm1.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm1.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm1.png  used on input line 327.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm2.png, id
+=198, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm2.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm2.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm2.png  used on input line 330.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm3.png, id
+=199, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm3.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm3.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm3.png  used on input line 333.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm4.png, id
+=200, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm4.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm4.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm4.png  used on input line 336.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm5.png, id
+=201, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm5.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm5.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm5.png  used on input line 339.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm6.png, id
+=202, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm6.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm6.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm6.png  used on input line 342.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm7.png, id
+=203, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm7.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm7.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm7.png  used on input line 345.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm8.png, id
+=204, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm8.pn
+g Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm8.png
+>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/rej_flow
+_lm/rej_flow_lm8.png  used on input line 348.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [11 </Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm1.pn
+g> </Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm2.png>
+ </Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm3.png> <
+/Users/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm4.png> </U
+sers/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm5.png> </Use
+rs/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm6.png> </Users
+/michaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm7.png> </Users/m
+ichaelferon/Projects/rowave2/plots/ts/rej_flow_lm/rej_flow_lm8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a1.png, 
+id=216, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a1.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a1.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a1.png  used on input line 358.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a2.png, 
+id=217, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a2.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a2.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a2.png  used on input line 361.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a3.png, 
+id=218, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a3.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a3.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a3.png  used on input line 364.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a4.png, 
+id=219, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a4.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a4.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a4.png  used on input line 367.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a5.png, 
+id=220, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a5.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a5.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a5.png  used on input line 370.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a6.png, 
+id=221, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a6.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a6.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a6.png  used on input line 373.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a7.png, 
+id=222, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a7.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a7.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a7.png  used on input line 376.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a8.png, 
+id=223, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a8.
+png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a8.p
+ng>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/ac_curre
+nt_a/ac_current_a8.png  used on input line 379.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [12 </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a1.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a2.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a3.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a4.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a5.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a6.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a7.
+png> </Users/michaelferon/Projects/rowave2/plots/ts/ac_current_a/ac_current_a8.
+png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency1.png, id=235, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency1.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency1.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency1.png  used on input line 389.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency2.png, id=236, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency2.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency2.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency2.png  used on input line 392.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency3.png, id=237, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency3.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency3.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency3.png  used on input line 395.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency4.png, id=238, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency4.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency4.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency4.png  used on input line 398.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency5.png, id=239, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency5.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency5.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency5.png  used on input line 401.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency6.png, id=240, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency6.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency6.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency6.png  used on input line 404.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency7.png, id=241, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency7.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency7.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency7.png  used on input line 407.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency8.png, id=242, 2
+175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency8.png Graph
+ic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency8.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/../fft/f
+requency8.png  used on input line 410.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [13 </Users/michaelferon/Projects/rowave2/plots/ts/../fft/frequency1.png> </Us
+ers/michaelferon/Projects/rowave2/plots/ts/../fft/frequency2.png> </Users/micha
+elferon/Projects/rowave2/plots/ts/../fft/frequency3.png> </Users/michaelferon/P
+rojects/rowave2/plots/ts/../fft/frequency4.png> </Users/michaelferon/Projects/r
+owave2/plots/ts/../fft/frequency5.png> </Users/michaelferon/Projects/rowave2/pl
+ots/ts/../fft/frequency6.png> </Users/michaelferon/Projects/rowave2/plots/ts/..
+/fft/frequency7.png> </Users/michaelferon/Projects/rowave2/plots/ts/../fft/freq
+uency8.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_perm_coef
+.png, id=255, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/water_perm_coef.png  used on input line 420.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_flux_lmh.
+png, id=256, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/water_flux_lmh.png  used on input line 423.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_pressure_p
+si.png, id=257, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/feed_pressure_psi.png  used on input line 426.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_pump_pow.p
+ng, id=258, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/feed_pump_pow.png  used on input line 429.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_volume_l.p
+ng, id=259, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/feed_volume_l.png  used on input line 432.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_temp_c.png
+, id=260, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/feed_temp_c.png  used on input line 435.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_flow_lm.pn
+g, id=261, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/feed_flow_lm.png  used on input line 438.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/perm_cond_low_u
+s.png, id=262, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/perm_cond_low_us.png  used on input line 441.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/perm_flow_lm.pn
+g, id=263, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/perm_flow_lm.png  used on input line 444.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/rej_cond_ms.png
+, id=264, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/rej_cond_ms.png  used on input line 447.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/rej_flow_lm.png
+, id=265, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/rej_flow_lm.png  used on input line 450.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/ac_current_a.pn
+g, id=266, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/ac_current_a.png  used on input line 453.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [14 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp1
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp1/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp1/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp1/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp1/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp1/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp1/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp1/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp1/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp1/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_perm_coef
+.png, id=282, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/water_perm_coef.png  used on input line 463.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_flux_lmh.
+png, id=283, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/water_flux_lmh.png  used on input line 466.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_pressure_p
+si.png, id=284, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/feed_pressure_psi.png  used on input line 469.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_pump_pow.p
+ng, id=285, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/feed_pump_pow.png  used on input line 472.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_volume_l.p
+ng, id=286, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/feed_volume_l.png  used on input line 475.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_temp_c.png
+, id=287, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/feed_temp_c.png  used on input line 478.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_flow_lm.pn
+g, id=288, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/feed_flow_lm.png  used on input line 481.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/perm_cond_low_u
+s.png, id=289, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/perm_cond_low_us.png  used on input line 484.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/perm_flow_lm.pn
+g, id=290, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/perm_flow_lm.png  used on input line 487.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/rej_cond_ms.png
+, id=291, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/rej_cond_ms.png  used on input line 490.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/rej_flow_lm.png
+, id=292, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/rej_flow_lm.png  used on input line 493.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/ac_current_a.pn
+g, id=293, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp2/ac_current_a.png  used on input line 496.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+
+[15 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water_perm_
+coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/water
+_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp2/
+feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experimen
+ts/exp2/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/exper
+iments/exp2/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/e
+xperiments/exp2/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/ts
+/experiments/exp2/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plots
+/ts/experiments/exp2/perm_cond_low_us.png> </Users/michaelferon/Projects/rowave
+2/plots/ts/experiments/exp2/perm_flow_lm.png> </Users/michaelferon/Projects/row
+ave2/plots/ts/experiments/exp2/rej_cond_ms.png> </Users/michaelferon/Projects/r
+owave2/plots/ts/experiments/exp2/rej_flow_lm.png> </Users/michaelferon/Projects
+/rowave2/plots/ts/experiments/exp2/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_perm_coef
+.png, id=309, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/water_perm_coef.png  used on input line 506.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_flux_lmh.
+png, id=310, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/water_flux_lmh.png  used on input line 509.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_pressure_p
+si.png, id=311, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/feed_pressure_psi.png  used on input line 512.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_pump_pow.p
+ng, id=312, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/feed_pump_pow.png  used on input line 515.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_volume_l.p
+ng, id=313, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/feed_volume_l.png  used on input line 518.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_temp_c.png
+, id=314, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/feed_temp_c.png  used on input line 521.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_flow_lm.pn
+g, id=315, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/feed_flow_lm.png  used on input line 524.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/perm_cond_low_u
+s.png, id=316, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/perm_cond_low_us.png  used on input line 527.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/perm_flow_lm.pn
+g, id=317, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/perm_flow_lm.png  used on input line 530.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/rej_cond_ms.png
+, id=318, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/rej_cond_ms.png  used on input line 533.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/rej_flow_lm.png
+, id=319, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/rej_flow_lm.png  used on input line 536.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/ac_current_a.pn
+g, id=320, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/ac_current_a.png  used on input line 539.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [16 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp3
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp3/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp3/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp3/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp3/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp3/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp3/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp3/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp3/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp3/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_perm_coef
+.png, id=336, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/water_perm_coef.png  used on input line 549.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_flux_lmh.
+png, id=337, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/water_flux_lmh.png  used on input line 552.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_pressure_p
+si.png, id=338, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/feed_pressure_psi.png  used on input line 555.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_pump_pow.p
+ng, id=339, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/feed_pump_pow.png  used on input line 558.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_volume_l.p
+ng, id=340, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/feed_volume_l.png  used on input line 561.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_temp_c.png
+, id=341, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/feed_temp_c.png  used on input line 564.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_flow_lm.pn
+g, id=342, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/feed_flow_lm.png  used on input line 567.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/perm_cond_low_u
+s.png, id=343, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/perm_cond_low_us.png  used on input line 570.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/perm_flow_lm.pn
+g, id=344, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/perm_flow_lm.png  used on input line 573.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/rej_cond_ms.png
+, id=345, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/rej_cond_ms.png  used on input line 576.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/rej_flow_lm.png
+, id=346, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/rej_flow_lm.png  used on input line 579.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/ac_current_a.pn
+g, id=347, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/ac_current_a.png  used on input line 582.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [17 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp4
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp4/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp4/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp4/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp4/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp4/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp4/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp4/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp4/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp4/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_perm_coef
+.png, id=363, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/water_perm_coef.png  used on input line 592.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_flux_lmh.
+png, id=364, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/water_flux_lmh.png  used on input line 595.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_pressure_p
+si.png, id=365, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/feed_pressure_psi.png  used on input line 598.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_pump_pow.p
+ng, id=366, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/feed_pump_pow.png  used on input line 601.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_volume_l.p
+ng, id=367, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/feed_volume_l.png  used on input line 604.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_temp_c.png
+, id=368, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/feed_temp_c.png  used on input line 607.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_flow_lm.pn
+g, id=369, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/feed_flow_lm.png  used on input line 610.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/perm_cond_low_u
+s.png, id=370, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/perm_cond_low_us.png  used on input line 613.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/perm_flow_lm.pn
+g, id=371, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/perm_flow_lm.png  used on input line 616.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/rej_cond_ms.png
+, id=372, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/rej_cond_ms.png  used on input line 619.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/rej_flow_lm.png
+, id=373, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/rej_flow_lm.png  used on input line 622.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/ac_current_a.pn
+g, id=374, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/ac_current_a.png  used on input line 625.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [18 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp5
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp5/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp5/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp5/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp5/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp5/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp5/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp5/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp5/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp5/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_perm_coef
+.png, id=390, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/water_perm_coef.png  used on input line 635.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_flux_lmh.
+png, id=391, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/water_flux_lmh.png  used on input line 638.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_pressure_p
+si.png, id=392, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/feed_pressure_psi.png  used on input line 641.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_pump_pow.p
+ng, id=393, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/feed_pump_pow.png  used on input line 644.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_volume_l.p
+ng, id=394, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/feed_volume_l.png  used on input line 647.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_temp_c.png
+, id=395, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/feed_temp_c.png  used on input line 650.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_flow_lm.pn
+g, id=396, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/feed_flow_lm.png  used on input line 653.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/perm_cond_low_u
+s.png, id=397, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/perm_cond_low_us.png  used on input line 656.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/perm_flow_lm.pn
+g, id=398, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/perm_flow_lm.png  used on input line 659.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/rej_cond_ms.png
+, id=399, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/rej_cond_ms.png  used on input line 662.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/rej_flow_lm.png
+, id=400, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/rej_flow_lm.png  used on input line 665.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/ac_current_a.pn
+g, id=401, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/ac_current_a.png  used on input line 668.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [19 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp6
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp6/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp6/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp6/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp6/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp6/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp6/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp6/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp6/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp6/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_perm_coef
+.png, id=418, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/water_perm_coef.png  used on input line 678.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_flux_lmh.
+png, id=419, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/water_flux_lmh.png  used on input line 681.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_pressure_p
+si.png, id=420, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/feed_pressure_psi.png  used on input line 684.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_pump_pow.p
+ng, id=421, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/feed_pump_pow.png  used on input line 687.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_volume_l.p
+ng, id=422, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/feed_volume_l.png  used on input line 690.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_temp_c.png
+, id=423, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/feed_temp_c.png  used on input line 693.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_flow_lm.pn
+g, id=424, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/feed_flow_lm.png  used on input line 696.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/perm_cond_low_u
+s.png, id=425, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/perm_cond_low_us.png  used on input line 699.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/perm_flow_lm.pn
+g, id=426, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/perm_flow_lm.png  used on input line 702.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/rej_cond_ms.png
+, id=427, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/rej_cond_ms.png  used on input line 705.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/rej_flow_lm.png
+, id=428, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/rej_flow_lm.png  used on input line 708.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/ac_current_a.pn
+g, id=429, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/ac_current_a.png  used on input line 711.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [20 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp7
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp7/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp7/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp7/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp7/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp7/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp7/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp7/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp7/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp7/ac_current_a.png>]
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_perm_coef
+.png, id=445, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_perm
+_coef.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_perm_
+coef.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/water_perm_coef.png  used on input line 721.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_flux_lmh.
+png, id=446, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_flux
+_lmh.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_flux_
+lmh.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/water_flux_lmh.png  used on input line 724.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_pressure_p
+si.png, id=447, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_press
+ure_psi.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_pressu
+re_psi.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/feed_pressure_psi.png  used on input line 727.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_pump_pow.p
+ng, id=448, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_pump_
+pow.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_pump_p
+ow.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/feed_pump_pow.png  used on input line 730.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_volume_l.p
+ng, id=449, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_volum
+e_l.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_volume
+_l.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/feed_volume_l.png  used on input line 733.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_temp_c.png
+, id=450, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_temp_
+c.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_temp_c
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/feed_temp_c.png  used on input line 736.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_flow_lm.pn
+g, id=451, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/feed_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/feed_flow_lm.png  used on input line 739.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/perm_cond_low_u
+s.png, id=452, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/perm_cond_
+low_us.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/perm_cond_l
+ow_us.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/perm_cond_low_us.png  used on input line 742.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/perm_flow_lm.pn
+g, id=453, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/perm_flow_
+lm.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/perm_flow_l
+m.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/perm_flow_lm.png  used on input line 745.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/rej_cond_ms.png
+, id=454, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/rej_cond_m
+s.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/rej_cond_ms
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/rej_cond_ms.png  used on input line 748.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/rej_flow_lm.png
+, id=455, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/rej_flow_l
+m.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/rej_flow_lm
+.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/rej_flow_lm.png  used on input line 751.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+</Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/ac_current_a.pn
+g, id=456, 2175.12625pt x 803.0pt>
+File: /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/ac_current
+_a.png Graphic file (type png)
+<use /Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/ac_current_
+a.png>
+Package pdftex.def Info: /Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/ac_current_a.png  used on input line 754.
+(pdftex.def)             Requested size: 291.38983pt x 107.56712pt.
+ [21 </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/water_perm
+_coef.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8/wate
+r_flux_lmh.png> </Users/michaelferon/Projects/rowave2/plots/ts/experiments/exp8
+/feed_pressure_psi.png> </Users/michaelferon/Projects/rowave2/plots/ts/experime
+nts/exp8/feed_pump_pow.png> </Users/michaelferon/Projects/rowave2/plots/ts/expe
+riments/exp8/feed_volume_l.png> </Users/michaelferon/Projects/rowave2/plots/ts/
+experiments/exp8/feed_temp_c.png> </Users/michaelferon/Projects/rowave2/plots/t
+s/experiments/exp8/feed_flow_lm.png> </Users/michaelferon/Projects/rowave2/plot
+s/ts/experiments/exp8/perm_cond_low_us.png> </Users/michaelferon/Projects/rowav
+e2/plots/ts/experiments/exp8/perm_flow_lm.png> </Users/michaelferon/Projects/ro
+wave2/plots/ts/experiments/exp8/rej_cond_ms.png> </Users/michaelferon/Projects/
+rowave2/plots/ts/experiments/exp8/rej_flow_lm.png> </Users/michaelferon/Project
+s/rowave2/plots/ts/experiments/exp8/ac_current_a.png>] (./aux/plots.aux) ) 
+Here is how much of TeX's memory you used:
+ 4562 strings out of 492616
+ 125878 string characters out of 6129482
+ 131546 words of memory out of 5000000
+ 8307 multiletter control sequences out of 15000+600000
+ 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,9n,40p,299b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on ./aux/plots.pdf (21 pages, 73285770 bytes).
+PDF statistics:
+ 481 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1001 words of extra memory for PDF output out of 10000 (max. 10000000)
+
