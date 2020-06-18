@@ -13,7 +13,8 @@ load('../data/data.Rdata')
 
 ## Number of experiments = 8.
 N <- 8
-OUTPUT <- FALSE
+OUTPUT <- TRUE
+DISPLAY <- FALSE
 
 
 
@@ -41,15 +42,17 @@ ts.detrend <- function(data, var, sp, name, q) {
   ft <- fft(response)
   
   # Plot time-series and frequency spectrum.
-  par(mfrow = c(2, 1))
   x.axis <- seq(0, 1/sp, length = N) * 60
   ts.title <- paste('Experiment ', expno, '\n', name, ' Time Series', sep='')
-  invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-  plot(time, response, type = 'l', main = ts.title, xlab = 'Time', ylab = name,
-       lwd = 0.1)
-  plot(x.axis[-1], Mod(ft)[-1], type = 'h', main = 'Frequency Spectrum',
-       xlab = expression(paste('Frequency (minutes'^-1, ')')),
-       ylab = 'Magnitude, |z|')
+  if (DISPLAY) {
+    par(mfrow = c(2, 1))
+    invisible(readline(prompt = 'Hit <Return> to see next plot: '))
+    plot(time, response, type = 'l', main = ts.title, xlab = 'Time',
+         ylab = name, lwd = 0.1)
+    plot(x.axis[-1], Mod(ft)[-1], type = 'h', main = 'Frequency Spectrum',
+         xlab = expression(paste('Frequency (minutes'^-1, ')')),
+         ylab = 'Magnitude, |z|')
+  }
   
   
   # Remove low-power frequencies.
@@ -57,47 +60,112 @@ ts.detrend <- function(data, var, sp, name, q) {
   strongFreq[Mod(strongFreq) < quantile(Mod(strongFreq), 1 - q)] <- 0
   
   # Plot full frequency spectrum and high-power frequency spectrum.
-  par(mfrow = c(2, 1))
-  invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-  plot(x.axis[-1], Mod(ft)[-1], type = 'h',
-       main = paste('Experiment ', expno, '\nFull Frequency Spectrum', sep=''),
-       xlab = expression(paste('Frequency (minutes'^-1, ')')),
-       ylab = 'Magnitude, |z|')
-  plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h', main = 'High-Power Frequency Spectrum',
-       xlab = expression(paste('Frequency (minutes'^-1, ')')),
-       ylab = 'Magnitude, |z|')
+  if (DISPLAY) {
+    par(mfrow = c(2, 1))
+    invisible(readline(prompt = 'Hit <Return> to see next plot: '))
+    plot(x.axis[-1], Mod(ft)[-1], type = 'h',
+         main = paste('Experiment ', expno, '\nFull Frequency Spectrum', sep=''),
+         xlab = expression(paste('Frequency (minutes'^-1, ')')),
+         ylab = 'Magnitude, |z|')
+    plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h',
+         main = 'High-Power Frequency Spectrum',
+         xlab = expression(paste('Frequency (minutes'^-1, ')')),
+         ylab = 'Magnitude, |z|')
+  }
   
   
   # Re-construct signal using only high-power frequencies.
   trend <- Re(fft(strongFreq, inverse = TRUE)) / N
   
   # Plot glimpse of time-series with reconstruction overlaid.
-  par(mfrow = c(1, 1))
-  invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-  plot(time[500:599], response[500:599], type = 'l', xlab = 'Time', ylab = name,
-       main = paste(ts.title, 'with Reconstruction Overlaid'))
-  lines(time[500:599], trend[500:599], col = 'red', lty = 2)
+  if (DISPLAY) {
+    par(mfrow = c(1, 1))
+    invisible(readline(prompt = 'Hit <Return> to see next plot: '))
+    plot(time[500:599], response[500:599], type = 'l', xlab = 'Time', ylab = name,
+         main = paste(ts.title, 'with Reconstruction Overlaid'))
+    lines(time[500:599], trend[500:599], col = 'red', lty = 2)
+  }
   
   
   # Compute residuals (response - reconstruction)
   res <- response - trend
   
   # Plot original time-series and residuals.
-  par(mfrow = c(2, 1))
-  invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-  plot(time, response, type = 'l', lwd = 0.1, main = ts.title, xlab = 'Time',
-       ylab = name)
-  plot(time, res, type = 'l', lwd = 0.1, main = 'Residuals', xlab = 'Time',
-       ylab = name)
+  if (DISPLAY) {
+    par(mfrow = c(2, 1))
+    invisible(readline(prompt = 'Hit <Return> to see next plot: '))
+    plot(time, response, type = 'l', lwd = 0.1, main = ts.title, xlab = 'Time',
+         ylab = name)
+    plot(time, res, type = 'l', lwd = 0.1, main = 'Residuals', xlab = 'Time',
+         ylab = name)
+  }
   
   
   # Plot ACF for original time-series and for residuals.
-  par(mfrow = c(2, 1))
-  invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-  response.acf <- acf(response, main = paste(name, 'ACF'))
-  resid.acf <- acf(res, main = 'Residual ACF')
-  par(mfrow = c(1, 1))
+  if (DISPLAY) {
+    par(mfrow = c(2, 1))
+    invisible(readline(prompt = 'Hit <Return> to see next plot: '))
+    acf(response, main = paste(name, 'ACF'))
+    acf(res, main = 'Residual ACF')
+    par(mfrow = c(1, 1))
+  }
   
+  
+  ## Output plots.
+  if (OUTPUT) {
+    outdir <- paste('../plots/trend/exp', expno, '/', sep='')
+    
+    png(file = paste(outdir, 'ts-freq.png', sep=''),
+        height = 675, width = 850)
+    par(mfrow = c(2, 1))
+    plot(time, response, type = 'l', main = ts.title, xlab = 'Time',
+         ylab = name, lwd = 0.1)
+    plot(x.axis[-1], Mod(ft)[-1], type = 'h', main = 'Frequency Spectrum',
+         xlab = expression(paste('Frequency (minutes'^-1, ')')),
+         ylab = 'Magnitude, |z|')
+    dev.off()
+    
+    png(file = paste(outdir, 'freq-comp.png', sep=''),
+        height = 675, width = 850)
+    par(mfrow = c(2, 1))
+    plot(x.axis[-1], Mod(ft)[-1], type = 'h',
+         main = paste('Experiment ', expno, '\nFull Frequency Spectrum', sep=''),
+         xlab = expression(paste('Frequency (minutes'^-1, ')')),
+         ylab = 'Magnitude, |z|')
+    plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h',
+         main = 'High-Power Frequency Spectrum',
+         xlab = expression(paste('Frequency (minutes'^-1, ')')),
+         ylab = 'Magnitude, |z|')
+    dev.off()
+    
+    png(file = paste(outdir, 'ts-trend.png', sep=''),
+        height = 500, width = 1000)
+    par(mfrow = c(1, 1))
+    plot(time[500:599], response[500:599], type = 'l', xlab = 'Time', ylab = name,
+         main = paste(ts.title, 'with Reconstruction Overlaid'))
+    lines(time[500:599], trend[500:599], col = 'red', lty = 2)
+    dev.off()
+    
+    png(file = paste(outdir, 'ts-resid.png', sep=''),
+        height = 675, width = 850)
+    par(mfrow = c(2, 1))
+    plot(time, response, type = 'l', lwd = 0.1, main = ts.title, xlab = 'Time',
+         ylab = name)
+    plot(time, res, type = 'l', lwd = 0.1, main = 'Residuals', xlab = 'Time',
+         ylab = name)
+    dev.off()
+    
+    png(file = paste(outdir, 'acf.png', sep=''),
+        height = 675, width = 850)
+    par(mfrow = c(2, 1))
+    acf(response, main = paste(name, 'ACF'))
+    acf(res, main = 'Residual ACF')
+    par(mfrow = c(1, 1))
+    dev.off()
+  }
+  
+  # Reset mfrow.
+  par(mfrow = c(1, 1))
   
   df <- tibble(
     time = time,
@@ -107,7 +175,6 @@ ts.detrend <- function(data, var, sp, name, q) {
     trend = trend,
     resid = res
   )
-  
   return(df)
 }
 
@@ -123,7 +190,7 @@ dfs[[1]] <- data %>%
     q = 0.01
   )
 ## Experiment 2.
-data %>%
+dfs[[2]] <- data %>%
   filter(experiment == 2) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
@@ -132,7 +199,7 @@ data %>%
     q = 0.01
   )
 ## Experiment 3.
-data %>%
+dfs[[3]] <- data %>%
   filter(experiment == 3) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
@@ -141,7 +208,7 @@ data %>%
     q = 0.01
   )
 ## Experiment 4.
-data %>%
+dfs[[4]] <- data %>%
   filter(experiment == 4) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
@@ -150,7 +217,7 @@ data %>%
     q = 0.01
   )
 ## Experiment 5.
-data %>%
+dfs[[5]] <- data %>%
   filter(experiment == 5) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
@@ -159,7 +226,7 @@ data %>%
     q = 0.01
   )
 ## Experiment 6.
-data %>%
+dfs[[6]] <- data %>%
   filter(experiment == 6) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
@@ -168,7 +235,7 @@ data %>%
     q = 0.01
   )
 ## Experiment 7.
-data %>%
+dfs[[7]] <- data %>%
   filter(experiment == 7) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
@@ -177,7 +244,7 @@ data %>%
     q = 0.01
   )
 ## Experiment 8.
-data %>%
+dfs[[8]] <- data %>%
   filter(experiment == 8) %>%
   ts.detrend(
     var = 'feed_pressure_psi',
