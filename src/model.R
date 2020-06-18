@@ -32,18 +32,18 @@ rm(df)
 
 
 ### Data de-trending.
+exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
 ts.detrend <- function(data, var, sp, name, q) {
   time <- data$time
   response <- data[[var]]
   N <- length(response)
   expno <- data$experiment[1]
-  start <- 500
-  end <- start + sp*20
+  expname <- exp.names[expno]
   ft <- fft(response)
   
   # Plot time-series and frequency spectrum.
   x.axis <- seq(0, 1/sp, length = N) * 60
-  ts.title <- paste('Experiment ', expno, '\n', name, ' Time Series', sep='')
+  ts.title <- paste('Experiment ', expname, '\n', name, ' Time Series', sep='')
   if (DISPLAY) {
     par(mfrow = c(2, 1))
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
@@ -64,7 +64,7 @@ ts.detrend <- function(data, var, sp, name, q) {
     par(mfrow = c(2, 1))
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
     plot(x.axis[-1], Mod(ft)[-1], type = 'h',
-         main = paste('Experiment ', expno, '\nFull Frequency Spectrum', sep=''),
+         main = paste('Experiment ', expname, '\nFull Frequency Spectrum', sep=''),
          xlab = expression(paste('Frequency (minutes'^-1, ')')),
          ylab = 'Magnitude, |z|')
     plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h',
@@ -129,7 +129,7 @@ ts.detrend <- function(data, var, sp, name, q) {
         height = 675, width = 850)
     par(mfrow = c(2, 1))
     plot(x.axis[-1], Mod(ft)[-1], type = 'h',
-         main = paste('Experiment ', expno, '\nFull Frequency Spectrum', sep=''),
+         main = paste('Experiment ', expname, '\nFull Frequency Spectrum', sep=''),
          xlab = expression(paste('Frequency (minutes'^-1, ')')),
          ylab = 'Magnitude, |z|')
     plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h',
