@@ -11,7 +11,7 @@ load('../data/data.Rdata')
 
 ## Number of experiments = 8.
 N <- 8
-OUTPUT <- FALSE
+OUTPUT <- TRUE
 
 
 
@@ -183,8 +183,8 @@ plot.ts(
 ## Scatterplot matrices.
 for (i in 1:N) {
   if (OUTPUT) {
-    pdf(file = paste('../plots/scatter_matrix/corr/corr', i,
-                     '.pdf', sep = ''), height = 10.0, width = 10.0)
+    png(file = paste('../plots/scatter_matrix/corr/corr', i,
+                     '.png', sep = ''), height = 1000, width = 1000)
     set.seed(1)
     data %>%
       filter(experiment == i) %>%
@@ -203,8 +203,8 @@ for (i in 1:N) {
       pairs(cex = 0.01, main = paste('Experiment', exp.names[i]))
     dev.off()
     
-    pdf(file = paste('../plots/scatter_matrix/other/other', i,
-                     '.pdf', sep = ''), height = 10.0, width = 10.0)
+    png(file = paste('../plots/scatter_matrix/other/other', i,
+                     '.png', sep = ''), height = 1000, width = 1000)
     set.seed(1)
     data %>%
       filter(experiment == i) %>%
