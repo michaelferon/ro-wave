@@ -11,10 +11,12 @@ library(dplyr)
 # List of .csv files.
 files <- list.files('../data/raw', full.names = TRUE)
 
+N <- 8
+
 # Read in data.
 data <- read_csv(files[1], skip = 1, col_types = cols(Time = col_character()))
 data$experiment <- 1
-for (i in 2:8) {
+for (i in 2:N) {
   temp <- read_csv(files[i], skip = 1, col_types = cols(Time = col_character()))
   temp$experiment <- i
   data <- data %>%
@@ -92,7 +94,7 @@ last <- c(100, 90, 50, 60, 30, 290, 0, 22)
 temp <- data %>%
   filter(experiment == 1) %>%
   slice(first[1]:(n() - last[1]))
-for (i in 2:8) {
+for (i in 2:N) {
   temp <- data %>%
     filter(experiment == i) %>%
     slice(first[i]:(n() - last[i])) %>%
@@ -101,7 +103,21 @@ for (i in 2:8) {
 
 fullData <- data
 data <- temp
-rm(temp)
+
+ns <- cumsum(tapply(data$experiment, data$experiment, length)[-N])
+keep <- c(
+  4908:84132,
+  4238:81182 + ns[1],
+  5323:80322 + ns[2],
+  5585:84648 + ns[3],
+  2991:75638 + ns[4],
+  5558:90965 + ns[5],
+  235:36045 + ns[6],
+  624:79433 + ns[7]
+)
+data <- data %>%
+  slice(keep)
+rm(temp, ns, keep)
 
 
 ## Save data.
