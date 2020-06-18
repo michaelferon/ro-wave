@@ -179,12 +179,21 @@ plot.ts(
 
 
 
-
+lower.panel <- function(x, y) {
+  usr <- par('usr')
+  on.exit(par(usr))
+  par(usr = c(0, 1, 0, 1))
+  r <- round(cor(x, y), digits = 2)
+  text(0.5, 0.5, paste(r), cex = 2.5)
+}
+upper.panel <- function(x, y) {
+  points(x, y, pch = 20, cex = 0.01)
+}
 ## Scatterplot matrices.
 for (i in 1:N) {
   if (OUTPUT) {
     png(file = paste('../plots/scatter_matrix/corr/corr', i,
-                     '.png', sep = ''), height = 1000, width = 1000)
+                     '.png', sep = ''), height = 800, width = 800)
     set.seed(1)
     data %>%
       filter(experiment == i) %>%
@@ -200,11 +209,13 @@ for (i in 1:N) {
         rej_flow = rej_flow_lm,
         ac_curr = ac_current_a
       ) %>%
-      pairs(cex = 0.01, main = paste('Experiment', exp.names[i]))
+      pairs(lower.panel = lower.panel, upper.panel = upper.panel,
+            main = paste('Experiment', exp.names[i]), cex.main = 2.5,
+            cex.labels = 2.5)
     dev.off()
     
     png(file = paste('../plots/scatter_matrix/other/other', i,
-                     '.png', sep = ''), height = 1000, width = 1000)
+                     '.png', sep = ''), height = 800, width = 800)
     set.seed(1)
     data %>%
       filter(experiment == i) %>%
@@ -219,7 +230,9 @@ for (i in 1:N) {
         perm_cond = perm_cond_low_us,
         rej_cond = rej_cond_ms
       ) %>%
-      pairs(cex = 0.01, main = paste('Experiment', exp.names[i]))
+      pairs(lower.panel = lower.panel, upper.panel = upper.panel,
+            main = paste('Experiment', exp.names[i]), cex.main = 2.5,
+            cex.labels = 2.5)
     dev.off()
   }
 }

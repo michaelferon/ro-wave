@@ -18,29 +18,6 @@ OUTPUT <- FALSE
 
 
 
-### Data removal.
-# df <- data %>%
-#   filter(experiment == 1)
-# df %>%
-#   ggplot(aes(time, feed_pressure_psi, color = mode)) +
-#   geom_line()
-# a <- which(diff(which(df$mode == 'SYSTEM MODE: Auto Water Flux (Fixed)')) > 1)
-# which(df$mode == 'SYSTEM MODE: Auto Water Flux (Fixed)')[(a - 1):(a + 2)]
-
-ns <- cumsum(tapply(data$experiment, data$experiment, length)[-N])
-keep <- c(
-  4908:84132,
-  4238:81182 + ns[1],
-  5323:80322 + ns[2],
-  5585:84648 + ns[3],
-  2991:75638 + ns[4],
-  5558:90965 + ns[5],
-  235:36045 + ns[6],
-  624:79433 + ns[7]
-)
-data <- data %>%
-  slice(keep)
-
 # Test: feed pressure ts plots for each experiment.
 for (i in 1:N) {
   df <- data %>%
@@ -48,7 +25,7 @@ for (i in 1:N) {
   plot(df$time, df$feed_pressure_psi, type = 'l', lwd = 0.1,
        main = paste('Experiment', i))
 }
-rm(ns, keep, df)
+rm(df)
 
 
 
@@ -60,6 +37,7 @@ ts.detrend <- function(data, var, sp, name, q) {
   N <- length(response)
   expno <- data$experiment[1]
   start <- 500
+  end <- start + sp*20
   ft <- fft(response)
   
   # Plot time-series and frequency spectrum.
