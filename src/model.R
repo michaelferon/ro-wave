@@ -48,16 +48,18 @@ ts.detrend <- function(data, var, sp, name, q) {
     par(mfrow = c(2, 1))
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
     plot(time, response, type = 'l', main = ts.title, xlab = 'Time',
-         ylab = name, lwd = 0.1)
+         ylab = name, lwd = 0.1, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     plot(x.axis[-1], Mod(ft)[-1], type = 'h', main = 'Frequency Spectrum',
          xlab = expression(paste('Frequency (minutes'^-1, ')')),
-         ylab = 'Magnitude, |z|')
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
   }
   
   
   # Remove low-power frequencies.
   strongFreq <- ft
   strongFreq[Mod(strongFreq) < quantile(Mod(strongFreq), 1 - q)] <- 0
+  colors <- rep('black', nrow(data))
+  colors[strongFreq == 0] <- 'red'
   
   # Plot full frequency spectrum and high-power frequency spectrum.
   if (DISPLAY) {
@@ -65,12 +67,14 @@ ts.detrend <- function(data, var, sp, name, q) {
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
     plot(x.axis[-1], Mod(ft)[-1], type = 'h',
          main = paste('Experiment ', expname, '\nFull Frequency Spectrum', sep=''),
-         xlab = expression(paste('Frequency (minutes'^-1, ')')),
-         ylab = 'Magnitude, |z|')
+         xlab = expression(paste('Frequency (minutes'^-1, ')')), col = colors,
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
+    legend('top', legend = 'Low Power',
+           col = 'red', lty = 1, cex = 1.25)
     plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h',
          main = 'High-Power Frequency Spectrum',
          xlab = expression(paste('Frequency (minutes'^-1, ')')),
-         ylab = 'Magnitude, |z|')
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
   }
   
   
@@ -81,9 +85,12 @@ ts.detrend <- function(data, var, sp, name, q) {
   if (DISPLAY) {
     par(mfrow = c(1, 1))
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-    plot(time[500:599], response[500:599], type = 'l', xlab = 'Time', ylab = name,
-         main = paste(ts.title, 'with Reconstruction Overlaid'))
-    lines(time[500:599], trend[500:599], col = 'red', lty = 2)
+    plot(time[5000:5099], response[5000:5099], type = 'l', xlab = 'Time',
+         ylab = name, main = paste(ts.title, 'with Reconstruction Overlaid'),
+         cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
+    lines(time[5000:5099], trend[5000:5099], col = 'red', lty = 2, lwd = 1.5)
+    legend('topleft', legend = c('Original', 'Re-construction'),
+           col = c('black', 'red'), lty = 1:2, cex = 1.5)
   }
   
   
@@ -95,9 +102,9 @@ ts.detrend <- function(data, var, sp, name, q) {
     par(mfrow = c(2, 1))
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
     plot(time, response, type = 'l', lwd = 0.1, main = ts.title, xlab = 'Time',
-         ylab = name)
+         ylab = name, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     plot(time, res, type = 'l', lwd = 0.1, main = 'Residuals', xlab = 'Time',
-         ylab = name)
+         ylab = name, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
   }
   
   
@@ -105,8 +112,11 @@ ts.detrend <- function(data, var, sp, name, q) {
   if (DISPLAY) {
     par(mfrow = c(2, 1))
     invisible(readline(prompt = 'Hit <Return> to see next plot: '))
-    acf(response, main = paste(name, 'ACF'))
-    acf(res, main = 'Residual ACF')
+    acf(response, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5,
+        main = paste('Experiment ', expname, '\n', name,
+                     ' Auto-Correlation Function', sep=''))
+    acf(res, main = 'Residual ACF', cex.axis = 1.3, cex.lab = 1.3,
+        cex.main = 1.5)
     par(mfrow = c(1, 1))
   }
   
@@ -119,10 +129,10 @@ ts.detrend <- function(data, var, sp, name, q) {
         height = 675, width = 850)
     par(mfrow = c(2, 1))
     plot(time, response, type = 'l', main = ts.title, xlab = 'Time',
-         ylab = name, lwd = 0.1)
+         ylab = name, lwd = 0.1, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     plot(x.axis[-1], Mod(ft)[-1], type = 'h', main = 'Frequency Spectrum',
          xlab = expression(paste('Frequency (minutes'^-1, ')')),
-         ylab = 'Magnitude, |z|')
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     dev.off()
     
     png(file = paste(outdir, 'freq-comp.png', sep=''),
@@ -130,36 +140,44 @@ ts.detrend <- function(data, var, sp, name, q) {
     par(mfrow = c(2, 1))
     plot(x.axis[-1], Mod(ft)[-1], type = 'h',
          main = paste('Experiment ', expname, '\nFull Frequency Spectrum', sep=''),
-         xlab = expression(paste('Frequency (minutes'^-1, ')')),
-         ylab = 'Magnitude, |z|')
+         xlab = expression(paste('Frequency (minutes'^-1, ')')), col = colors,
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
+    legend('top', legend = 'Low Power',
+           col = 'red', lty = 1, cex = 1.25)
     plot(x.axis[-1], Mod(strongFreq)[-1], type = 'h',
          main = 'High-Power Frequency Spectrum',
          xlab = expression(paste('Frequency (minutes'^-1, ')')),
-         ylab = 'Magnitude, |z|')
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     dev.off()
     
     png(file = paste(outdir, 'ts-trend.png', sep=''),
         height = 500, width = 1000)
     par(mfrow = c(1, 1))
-    plot(time[500:599], response[500:599], type = 'l', xlab = 'Time', ylab = name,
-         main = paste(ts.title, 'with Reconstruction Overlaid'))
-    lines(time[500:599], trend[500:599], col = 'red', lty = 2)
+    plot(time[5000:5099], response[5000:5099], type = 'l', xlab = 'Time',
+         ylab = name, main = paste(ts.title, 'with Reconstruction Overlaid'),
+         cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
+    lines(time[5000:5099], trend[5000:5099], col = 'red', lty = 2, lwd = 1.5)
+    legend('topleft', legend = c('Original', 'Re-construction'),
+           col = c('black', 'red'), lty = 1:2, cex = 1.5)
     dev.off()
     
     png(file = paste(outdir, 'ts-resid.png', sep=''),
         height = 675, width = 850)
     par(mfrow = c(2, 1))
     plot(time, response, type = 'l', lwd = 0.1, main = ts.title, xlab = 'Time',
-         ylab = name)
+         ylab = name, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     plot(time, res, type = 'l', lwd = 0.1, main = 'Residuals', xlab = 'Time',
-         ylab = name)
+         ylab = name, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
     dev.off()
     
     png(file = paste(outdir, 'acf.png', sep=''),
         height = 675, width = 850)
     par(mfrow = c(2, 1))
-    acf(response, main = paste(name, 'ACF'))
-    acf(res, main = 'Residual ACF')
+    acf(response, cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5,
+        main = paste('Experiment ', expname, '\n', name,
+                     ' Auto-Correlation Function', sep=''))
+    acf(res, main = 'Residual ACF', cex.axis = 1.3, cex.lab = 1.3,
+        cex.main = 1.5)
     par(mfrow = c(1, 1))
     dev.off()
   }
@@ -278,9 +296,8 @@ M <- nrow(df)
 T <- 8
 rad <- 2 * pi * (1:M) / T
 par(mfrow = c(1, 1))
-phi <- 0
 
-mod1 <- lm(pressure ~ cos(rad + phi) + sin(rad + phi))
+mod1 <- lm(pressure ~ cos(rad) + sin(rad))
 plot(time, pressure, type = 'l', xlab = 'Time',
      main = 'Feed Pressure Time Series', ylab = 'Pressure')
 lines(time, fitted(mod1), col = 'red', lty = 'dashed')
@@ -288,49 +305,26 @@ summary(mod1)
 rm(mod1)
 
 
-mod2 <- lm(pressure ~ cos(rad) + sin(rad) + cos(2*rad) + sin(2*rad))
-plot(time, pressure, type = 'l', xlab = 'Time',
-     main = 'Feed Pressure Time Series', ylab = 'Pressure')
-lines(time, fitted(mod2), col = 'red', lty = 'dashed')
 
 
-mod3 <- lm(pressure ~ cos(rad) + sin(rad) + cos(2*rad) + sin(2*rad) +
-             cos(3*rad) + sin(3*rad))
-plot(time, pressure, type = 'l', xlab = 'Time',
-     main = 'Feed Pressure Time Series', ylab = 'Pressure')
-lines(time, fitted(mod3), col = 'red', lty = 'dashed')
-
-
-mod4 <- lm(pressure ~ cos(rad) + sin(rad) + cos(2*rad) + sin(2*rad) +
-             cos(3*rad) + sin(3*rad) + cos(4*rad) + sin(4*rad))
-plot(time, pressure, type = 'l', xlab = 'Time',
-     main = 'Feed Pressure Time Series', ylab = 'Pressure')
-lines(time, fitted(mod4), col = 'red', lty = 'dashed')
-
-
-mod5 <- lm(pressure ~ cos(rad) + sin(rad) + cos(2*rad) + sin(2*rad) +
-             cos(3*rad) + sin(3*rad) + cos(4*rad) + sin(4*rad) +
-             cos(5*rad) + sin(5*rad) + cos(6*rad) + sin(6*rad) +
-             cos(7*rad) + sin(7*rad) + cos(8*rad) + sin(8*rad))
-plot(time, pressure, type = 'l', xlab = 'Time',
-     main = 'Feed Pressure Time Series', ylab = 'Pressure')
-lines(time, fitted(mod5), col = 'red', lty = 'dashed')
-
-
-
-
+### Linear Models.
 df <- data %>%
-  filter(experiment == 1)
+  filter(experiment == 1) %>%
+  select(-experiment, -mode, -status, -rej_valve_open, -rej_flow_lm)
 model <- df %>%
-  select(-time, -experiment, -mode, -status) %>%
+  select(-time) %>%
   lm(perm_cond_low_us ~ ., data = .)
 plot(df$time[500:1000], df$perm_cond_low_us[500:1000], type = 'l')
 lines(df$time[500:1000], fitted(model)[500:1000], col = 'red')
 
+df2 <- data %>%
+  filter(experiment == 2) %>%
+  select(-experiment, -mode, -status, -rej_valve_open, -rej_flow_lm)
+fit <- predict(model, df2 %>% select(-time))
+plot(df2$time[500:1000], df2$perm_cond_low_us[500:1000], type = 'l')
+lines(df2$time[500:1000], fit[500:1000], col = 'red', lty = 2)
 
-plot(df$time, df$perm_cond_low_us, type = 'l', lwd = 0.1)
-plot(df$time, log(df$perm_cond_low_us), type = 'l', lwd = 0.1)
-plot(df$time, 1/df$perm_cond_low_us, type = 'l', lwd = 0.1)
+
 
 
 
