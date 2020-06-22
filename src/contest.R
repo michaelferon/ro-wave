@@ -88,9 +88,11 @@ dfother <- data %>%
     Permeability = water_perm_coef
   )
 
-pdf(file = '../plots/contest/final.pdf', height = 10, width = 10)
-par(mfrow = c(1, 2))
+
+pdf(file = '../plots/contest/finala.pdf', height = 10, width = 10)
 dfcorr %>% pairs(cex=0.01, cex.labels=2.25, xaxt='n', yaxt='n', ann=FALSE)
+dev.off()
+pdf(file = '../plots/contest/finalb.pdf', height = 10, width = 10)
 dfother %>% pairs(cex=0.01, cex.labels=2.25, xaxt='n', yaxt='n', ann=FALSE)
 dev.off()
 
