@@ -60,4 +60,41 @@ for (i in 1:N) {
   }
 }
 
+set.seed(1)
+dfcorr <- data %>%
+  filter(experiment == 6) %>%
+  slice(sample(1:nrow(.), 10000, replace = FALSE)) %>%
+  select(feed_pressure_psi, water_flux_lmh, feed_pump_pow, feed_flow_lm,
+         ac_current_a) %>%
+  rename(
+    Pressure = feed_pressure_psi,
+    Flux = water_flux_lmh,
+    Power = feed_pump_pow,
+    Flow = feed_flow_lm,
+    Current = ac_current_a
+  )
+
+set.seed(1)
+dfother <- data %>%
+  filter(experiment == 1) %>%
+  slice(sample(1:nrow(.), 10000, replace = FALSE)) %>%
+  select(feed_pressure_psi, feed_temp_c,
+         perm_cond_low_us, rej_cond_ms, water_perm_coef) %>%
+  rename(
+    Pressure = feed_pressure_psi,
+    Temperature = feed_temp_c,
+    Permeate = perm_cond_low_us,
+    Reject = rej_cond_ms,
+    Permeability = water_perm_coef
+  )
+
+pdf(file = '../plots/contest/final.pdf', height = 10, width = 10)
+par(mfrow = c(1, 2))
+dfcorr %>% pairs(cex=0.01, cex.labels=2.25, xaxt='n', yaxt='n', ann=FALSE)
+dfother %>% pairs(cex=0.01, cex.labels=2.25, xaxt='n', yaxt='n', ann=FALSE)
+dev.off()
+
+
+  
+
 
