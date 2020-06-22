@@ -27,26 +27,6 @@ data %>%
   theme(legend.position = "none")
 
 
-# Lasso
-test <- data %>%
-  filter(experiment == 1) %>%
-  select(-mode, -status, -ac_current_a, -rej_valve_open, -rej_flow_lm, -time, -experiment)
-
-predict_col <- which(colnames((test)) == "perm_cond_low_us")
-
-y <- as.matrix(test[,predict_col])
-x <- as.matrix(test[,-predict_col])
-
-mod_ridge <- cv.glmnet(x, y, alpha = 0)
-
-coef(mod_ridge, s = mod_ridge$lambda.min)[ , 1]
-weights <- 1/abs(matrix(coef(mod_ridge, s = mod_ridge$lambda.min)[, 1][-1]))^1
-
-mod_adaptive <- cv.glmnet(x, y,  alpha = 1, penalty.factor = weights)
-
-plot(mod_adaptive)
-
-
 
 ## for loop for adaptive lasso 
 N <- 8
