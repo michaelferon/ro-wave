@@ -8,8 +8,6 @@ library(viridis)
 
 ## Load data.
 load('../data/data.Rdata')
-# data <- fullData
-# rm(fullData)
 
 ## Number of experiments = 8.
 N <- 8

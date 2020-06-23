@@ -11,6 +11,7 @@ library(dplyr)
 # List of .csv files.
 files <- list.files('../data/raw', full.names = TRUE)
 
+# Number of experiments.
 N <- 8
 
 # Read in data.
