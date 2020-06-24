@@ -13,7 +13,7 @@ load('../data/data.Rdata')
 
 ## Number of experiments = 8.
 N <- 8
-OUTPUT <- TRUE
+OUTPUT <- FALSE
 DISPLAY <- FALSE
 
 
@@ -271,60 +271,30 @@ dfs[[8]] <- data %>%
   )
 
 
-## TEST
-test <- dfs[[1]]$resid
-x <- seq(min(test), max(test), length = 1000)
-y <- dnorm(x, mean = mean(test), sd = sd(test))
-par(mfrow = c(1, 2))
-plot(density(test),
-     main = 'Feed Pressure Density for Experiment 1\nwith Normal Density Overlaid')
-lines(x, y, col = 'red', lty = 2)
-qqnorm(test)
-qqline(test)
 
-
-
-### LUKE'S METHOD.
-df <- data %>%
-  filter(experiment == 1) %>%
-  slice(500:600)
-time <- df$time
-pressure <- df$feed_pressure_psi
-M <- nrow(df)
-
-T <- 8
-rad <- 2 * pi * (1:M) / T
-par(mfrow = c(1, 1))
-
-mod1 <- lm(pressure ~ cos(rad) + sin(rad))
-plot(time, pressure, type = 'l', xlab = 'Time',
-     main = 'Feed Pressure Time Series', ylab = 'Pressure')
-lines(time, fitted(mod1), col = 'red', lty = 'dashed')
-summary(mod1)
-rm(mod1)
-
-
-
-
-### Linear Models.
-df <- data %>%
-  filter(experiment == 1) %>%
-  select(-experiment, -mode, -status, -rej_valve_open, -rej_flow_lm)
-model <- df %>%
-  select(-time) %>%
-  lm(perm_cond_low_us ~ ., data = .)
-plot(df$time[500:1000], df$perm_cond_low_us[500:1000], type = 'l')
-lines(df$time[500:1000], fitted(model)[500:1000], col = 'red')
-
-df2 <- data %>%
-  filter(experiment == 2) %>%
-  select(-experiment, -mode, -status, -rej_valve_open, -rej_flow_lm)
-fit <- predict(model, df2 %>% select(-time))
-plot(df2$time[500:1000], df2$perm_cond_low_us[500:1000], type = 'l')
-lines(df2$time[500:1000], fit[500:1000], col = 'red', lty = 2)
-
-
-
+sps <- c(rep(1, 6), 20, 15)
+pc.dfs <- list()
+for (i in 1:N) {
+  df <- data %>%
+    filter(experiment == i) %>%
+    select(water_perm_coef, water_flux_lmh) %>%
+    scale
+  
+  eig <- eigen(t(df) %*% df)
+  
+  pc <- df %*% eig$vectors[, 1] %>%
+    as_tibble
+  pc$experiment <- i
+  pc$time <- data$time[data$experiment == i]
+  
+  pc.dfs[[i]] <- pc %>%
+    ts.detrend(
+      var = 'V1',
+      sp = sps[i],
+      name = expression(paste(1^st, ' Principal Component')),
+      q = 0.01
+    )
+}
 
 
 
