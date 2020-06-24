@@ -15,23 +15,26 @@ load('../data/data.Rdata')
 N <- 8
 OUTPUT <- FALSE
 DISPLAY <- FALSE
+sps <- c(rep(1, 6), 20, 15)
+exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
 
 
 
 # Test: feed pressure ts plots for each experiment.
-for (i in 1:N) {
-  df <- data %>%
-    filter(experiment == i)
-  plot(df$time, df$feed_pressure_psi, type = 'l', lwd = 0.1,
-       main = paste('Experiment', i))
+if (DISPLAY) {
+  for (i in 1:N) {
+    df <- data %>%
+      filter(experiment == i)
+    plot(df$time, df$feed_pressure_psi, type = 'l', lwd = 0.1,
+         main = paste('Experiment', i))
+  }
+  rm(df)
 }
-rm(df)
 
 
 
 
 ### Data de-trending.
-exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
 ts.detrend <- function(data, var, sp, name, q) {
   time <- data$time
   response <- data[[var]]
@@ -272,7 +275,7 @@ dfs[[8]] <- data %>%
 
 
 
-sps <- c(rep(1, 6), 20, 15)
+## Principal Components.
 pc.dfs <- list()
 for (i in 1:N) {
   df <- data %>%
@@ -295,6 +298,57 @@ for (i in 1:N) {
       q = 0.01
     )
 }
+
+save(pc.dfs, file = '../data/pcdfs.Rdata')
+
+
+
+
+
+OUTPUT <- FALSE
+DISPLAY <- FALSE
+
+big.dfs <- list()
+vars <- c('water_perm_coef', 'water_flux_lmh', 'feed_pressure_psi',
+          'feed_pump_pow', 'feed_volume_l', 'feed_flow_lm', 'perm_flow_lm',
+          'ac_current_a')
+names <- c('Water Permeability', 'Water Flux', 'Feed Pressure',
+           'Feed Pump Power', 'Feed Volume', 'Feed Flowrate',
+           'Permeate Flowrate', 'AC Current')
+
+for (i in 1:N) {
+  exp.df <- data %>%
+    filter(experiment == i)
+  temp.list <- list()
+  
+  for (j in 1:length(vars)) {
+    temp.df <- exp.df %>%
+      ts.detrend(
+        var = vars[j],
+        sp = sps[i],
+        name = names[j],
+        q = 0.01
+      )
+    names(temp.df)[names(temp.df) == 'response'] <- vars[j]
+    temp.list[[j]] <- temp.df
+  }
+  
+  big.dfs[[i]] <- temp.list
+}
+names(big.dfs) <- paste('exp', 1:N, sep='')
+for (i in 1:N) {
+  names(big.dfs[[i]]) <- vars
+}
+
+save(big.dfs, file = '../data/bigdfs.Rdata')
+
+
+
+
+
+
+
+
 
 
 
