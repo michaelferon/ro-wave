@@ -30,13 +30,13 @@ data %>%
 
 ## for loop for adaptive lasso 
 N <- 8
-OUTPUT <- FALSE
+OUTPUT <- TRUE
 
 
 for(i in 1:N){
   test <- data %>%
     filter(experiment == i) %>%
-    select(-mode, -status, -ac_current_a, -rej_valve_open, -rej_flow_lm, -time, -experiment)
+    select(-mode, -status, -ac_current_a, -rej_valve_open, -rej_flow_lm, -time, -experiment, -perm_cond_high_us)
   
   predict_col <- which(colnames((test)) == "perm_cond_low_us")
   
@@ -138,10 +138,3 @@ for(i in 1:N){
     dev.off()
   }
 }
-
-
-
-
-
-
-
