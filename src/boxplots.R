@@ -35,8 +35,9 @@ if(OUTPUT){
 data %>%
   ggplot(aes(x = dm, y = perm_cond_low_us)) +
   geom_boxplot(aes(fill = experiment)) +
-  ggtitle("") +
-  ylab("Permeate Conductivity (us)") +
+  ggtitle("Permeate Conductivity Boxplots") +
+  labs(subtitle = "by half-experiment") +
+  ylab("Permeate Conductivity (uS)") +
   xlab("Experiment") +
   scale_fill_discrete(name = "Experiment", labels = exp_names) +
   theme_minimal() 
