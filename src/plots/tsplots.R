@@ -11,7 +11,7 @@ load('../data/data.Rdata')
 
 ## Number of experiments = 8.
 N <- 8
-OUTPUT <- FALSE
+OUTPUT <- TRUE
 
 
 
@@ -199,13 +199,12 @@ for (i in 1:N) {
       filter(experiment == i) %>%
       slice(sample(1:nrow(.), 10000, replace = FALSE)) %>%
       select(water_flux_lmh, feed_pressure_psi, feed_pump_pow, feed_flow_lm,
-             perm_flow_lm, rej_flow_lm, ac_current_a) %>%
+             rej_flow_lm, ac_current_a) %>%
       rename(
         flux = water_flux_lmh,
         feed_psi = feed_pressure_psi,
         feed_pow = feed_pump_pow,
         feed_flow = feed_flow_lm,
-        perm_flow = perm_flow_lm,
         rej_flow = rej_flow_lm,
         ac_curr = ac_current_a
       ) %>%
