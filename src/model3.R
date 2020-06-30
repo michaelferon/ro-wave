@@ -12,6 +12,18 @@ library(dplyr)
 load('../data/data.Rdata')
 N <- 8
 exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
+exp.salt <- c('35', '35', '35', 'IO', 'IO', 'IO', '1.5IO', 'IO')
+exp.wave <- c('7.5', '1.25', '12', '7.5', '1.25', '12', '7.5', 'NREL')
+
+
+data$salt <- as.character(NA)
+data$wave <- as.character(NA)
+for (i in 1:N) {
+  data$salt[data$experiment == i] <- exp.salt[i]
+  data$wave[data$experiment == i] <- exp.wave[i]
+}
+data <- data %>%
+  mutate_at(c('salt', 'wave'), as.factor)
 
 
 # Split data into training set.
@@ -97,7 +109,8 @@ for (i in 1:N) {
   mod <- data %>%
     filter(experiment == i) %>%
     select(-time, -experiment, -perm_cond_high_us, -perm_flow_lm, -rej_cond_ms,
-           -rej_flow_lm, -rej_valve_open, -mode, -status, -feed_temp_c) %>%
+           -rej_flow_lm, -rej_valve_open, -mode, -status, -feed_temp_c, -salt,
+           -wave) %>%
     lm(perm_cond_low_us ~ ., data = .)
   models[[i]] <- mod
 }
@@ -123,4 +136,51 @@ models.coef <- models.coef %>%
 for (i in 1:N) {
   print(summary(models[[i]])$r.squared)
 }
+
+
+
+
+
+
+model2 <- train %>%
+  select(-time, -experiment, -perm_cond_high_us, -perm_flow_lm, -rej_cond_ms,
+         -rej_flow_lm, -rej_valve_open, -mode, -status, -feed_temp_c) %>%
+  # select(perm_cond_low_us, salt, wave, feed_pressure_psi) %>%
+  lm(perm_cond_low_us ~ ., data = .)
+
+# Calculate RMSE.
+sqrt(sum(resid(model2)^2) / nobs(model2))
+
+
+# Fitting our model to the testing set.
+fit2 <- test %>%
+  select(-time, -experiment, -perm_cond_high_us, -perm_flow_lm, -rej_cond_ms,
+         -rej_flow_lm, -rej_valve_open, -mode, -status, -feed_temp_c) %>%
+  predict(model2, .)
+
+sqrt(sum((test$perm_cond_low_us - fit2)^2) / length(fit2))
+
+
+
+df2 <- tibble(
+  response = test$perm_cond_low_us,
+  fitted = fit2,
+  resid = response - fitted,
+  experiment = test$experiment
+)
+levels(df2$experiment) <- exp.names
+
+
+df2 %>%
+  ggplot(aes(response, fitted, color = experiment)) +
+  geom_point(size = 0.1) +
+  geom_abline(size = 0.5, slope = 1, intercept = 0, color = 'black',
+              linetype = 'dashed') +
+  ggtitle('Linear Model Fitted vs. Actual Values') + xlab('Actual Values') + ylab('Fitted Values') +
+  labs(subtitle = 'color-coded by experiment', color = 'Experiment') +
+  theme_minimal() +
+  scale_color_manual(values = magma(8)) +
+  guides(colour = guide_legend(override.aes = list(size = 3)))
+
+
 
