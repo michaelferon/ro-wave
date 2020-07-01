@@ -4,7 +4,6 @@
 *.o
 
 .Rhistory
-data/raw/
 docs/literature/
 docs/Cath\ Presentation.pptx
 data/bigdfs.Rdata
