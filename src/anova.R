@@ -77,6 +77,8 @@ df <- data %>%
   slice( round(0.5*n()) : n() ) %>%
   ungroup
 sds <- tapply(df$perm_cond_low_us, df$experiment, sd)
+# means <- tapply(df$perm_cond_low_us, df$experiment, mean)
+
 
 df <- df %>%
   group_by(experiment) %>%
@@ -99,24 +101,33 @@ df.mean <- df.mean %>%
   select(-experiment) %>%
   select(experiment = exp, wave, salt, perm_cond_low_us) %>%
   as.data.frame
+# df.mean$perm_cond_low_us  <- means
 df.mean$low <- as.numeric(NA)
 df.mean$high <- as.numeric(NA)
 z <- qt(1 - 0.05/2, df = S)
 df.mean$low <- df.mean$perm_cond_low_us - z*sds/sqrt(S)
 df.mean$high <- df.mean$perm_cond_low_us + z*sds/sqrt(S)
 
+text <- exp.names
+x <- c(1, 1, 1, 2, 2, 2, 2.2, 2) + 0.4
+y <- c(
+  df.mean$perm_cond_low_us[1:3],
+  df.mean$low[4],
+  df.mean$perm_cond_low_us[5:7],
+  df.mean$high[8]
+)
 png(file = '../plots/model/perm_cond_wave2.png', height = 600, width = 800)
 df.mean %>%
-  ggplot(aes(experiment, perm_cond_low_us, color = wave)) +
+  ggplot(aes(salt, perm_cond_low_us, color = wave)) +
   geom_point(size = 3.5) +
-  geom_errorbar(aes(ymin = low, ymax = high)) +
-  scale_color_manual(values = brewer.pal(n = 4, name = 'PuOr')) +
+  geom_errorbar(aes(ymin = low, ymax = high), size = 1.5, width = 0.5) +
+  scale_color_manual(values = brewer.pal(n = 4, name = 'RdBu')) +
   guides(colour = guide_legend(override.aes = list(size = 4.5))) +
-  ggtitle('Mean Permeate Conductivity by Experiment') +
+  ggtitle('Mean Permeate Conductivity vs. Salt Content') +
   labs(subtitle = 'color-coded by wave type', color = 'Wave Type') +
-  xlab('Experiment') + ylab('Permeate Conductivity (uS)') +
-  ylim(348, 778) +
-  theme_minimal(base_size = 20)
+  xlab('Salt Content') + ylab('Permeate Conductivity (uS)') +
+  annotate('text', x = x, y = y, label = text, size = 5.5) +
+  theme_classic(base_size = 20)
 dev.off()
 
 png(file = '../plots/model/perm_cond_salt2.png', height = 600, width = 800)
@@ -129,19 +140,20 @@ df.mean %>%
   labs(subtitle = 'color-coded by salt content', color = 'Salt Content') +
   xlab('Experiment') + ylab('Permeate Conductivity (uS)') +
   ylim(348, 778) +
+  
   theme_minimal(base_size = 20)
 dev.off()
 
 
 
 
-# tests <- list()
-# sets <- subsets(8, 2)
-# for (i in 1:nrow(sets)) {
-#   tests[[i]] <- df %>%
-#     filter(experiment == sets[i, 1] | experiment == sets[i, 2]) %>%
-#     t.test(formula = perm_cond_low_us ~ experiment, data = .)
-# }
+tests <- list()
+sets <- subsets(8, 2)
+for (i in 1:nrow(sets)) {
+  tests[[i]] <- df %>%
+    filter(experiment == sets[i, 1] | experiment == sets[i, 2]) %>%
+    t.test(formula = perm_cond_low_us ~ experiment, data = .)
+}
 
 
 
