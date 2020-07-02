@@ -1,6 +1,22 @@
 # RO-Wave Energy
 Analysis of reverse osmosis variable-pressure wave-driven desalination systems.
 
+To re-produce the plots and results from this project, simply run `init.R`, then `model.R`, then the other scripts in any order.
+
+## File Structure
+
+### ~/data
+Data is stored in ~/data. This includes the raw data, stored in `.csv` files, as well as multiple `.Rdata` objects created throughout the project.
+
+### ~/for the memes
+This folder contains memes produced throughout our project.
+
+### ~/plots
+This folder contains all the plots that were produced.
+
+### ~/src
+This folder contains source code.
+
 
 ## Source Code Descriptions
 
