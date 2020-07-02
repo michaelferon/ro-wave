@@ -13,7 +13,7 @@ load('../data/data.Rdata')
 
 ## Number of experiments = 8.
 N <- 8
-OUTPUT <- FALSE
+OUTPUT <- TRUE
 DISPLAY <- FALSE
 sps <- c(rep(1, 6), 20, 15)
 exp.names <- c('10A', '10B', '10C', '11A', '11B', '11C', '12A', '13')
@@ -36,6 +36,11 @@ if (DISPLAY) {
 
 ### Data de-trending.
 ts.detrend <- function(data, var, sp, name, q) {
+  if (nrow(data) %% 2) {
+    cut <- (nrow(data) + 1) / 2
+  } else {
+    cut <- nrow(data) / 2 + 1
+  }
   time <- data$time
   response <- data[[var]]
   N <- length(response)
@@ -181,6 +186,26 @@ ts.detrend <- function(data, var, sp, name, q) {
     acf(res, main = 'Residual ACF', cex.axis = 1.3, cex.lab = 1.3,
         cex.main = 1.5)
     par(mfrow = c(1, 1))
+    dev.off()
+    
+    
+    a <- 5000
+    b <- 5099
+    png(file = paste(outdir, 'test.png', sep=''),
+        height = 675, width = 850)
+    par(mfrow = c(2, 1))
+    plot(x.axis[-1][1:cut], Mod(ft)[-1][1:cut], type = 'h',
+         main = paste('Experiment ', expname, '\nFrequency Spectrum', sep=''),
+         xlab = expression(paste('Frequency (minutes'^-1, ')')), col = colors[1:cut],
+         ylab = 'Magnitude, |z|', cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
+    legend('top', legend = 'Low Power',
+           col = 'red', lty = 1, cex = 1.25)
+    plot(time[a:b], response[a:b], type = 'l', xlab = 'Time',
+         ylab = name, main = paste(ts.title, 'with Reconstruction Overlaid'),
+         cex.axis = 1.3, cex.lab = 1.3, cex.main = 1.5)
+    lines(time[a:b], trend[a:b], col = 'red', lty = 2, lwd = 1.5)
+    legend('topleft', legend = c('Original', 'Re-construction'),
+           col = c('black', 'red'), lty = 1:2, cex = 1.5)
     dev.off()
   }
   
