@@ -68,7 +68,7 @@ for (i in 1:N) {
       height = 675, width = 800)
   par(mfrow = c(2, 1))
   acf(response, main = paste('Permeate Conductivity ACF for Experiment',
-                             exp.names[i]))
+                             exp.names[i]), ylim = c(-0.2, 1.0))
   acf(res, main = 'Residual ACF', ylim = c(-0.2, 1.0))
   dev.off()
 }
