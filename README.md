@@ -1,7 +1,7 @@
 # RO-Wave Energy
 Analysis of reverse osmosis variable-pressure wave-driven desalination systems.
 
-To re-produce the plots and results from this project, simply run `init.R`, then `model.R`, then the other scripts in any order.
+To re-produce the plots and results from this project, simply run `init.R`, then `model.R`, then the other scripts in any order. __For any code to run, you must the ~/src directory set as your working directory__.
 
 ## File Structure
 
