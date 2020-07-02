@@ -65,10 +65,18 @@ for (i in 1:N) {
   fitted <- fit[test$experiment == i]
   res <- response - fitted
   png(file = paste('../plots/model/acf', i, '.png', sep=''),
-      height = 400, width = 850)
-  acf(res, main = paste('Residuals for Experiment', exp.names[i]), ylim = c(-0.1, 1.0))
+      height = 675, width = 800)
+  par(mfrow = c(2, 1))
+  acf(response, main = paste('Permeate Conductivity ACF for Experiment',
+                             exp.names[i]))
+  acf(res, main = 'Residual ACF', ylim = c(-0.2, 1.0))
   dev.off()
 }
+
+png(file = '../plots/model/thing.png', height = 675, width = 800)
+
+acf(test$perm_cond_low_us[test$experiment == 8])
+dev.off()
 
 df <- tibble(
   response = test$perm_cond_low_us,
