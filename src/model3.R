@@ -50,6 +50,7 @@ dev.off()
 
 # Calculate RMSE.
 sqrt(sum(resid(model)^2) / nobs(model))
+mean(abs(resid(model)))
 
 
 # Fitting our model to the testing set.
@@ -59,6 +60,7 @@ fit <- test %>%
   predict(model, .)
 
 sqrt(sum((test$perm_cond_low_us - fit)^2) / length(fit))
+mean(abs(test$perm_cond_low_us - fit))
 
 for (i in 1:N) {
   response <- test$perm_cond_low_us[test$experiment == i]
